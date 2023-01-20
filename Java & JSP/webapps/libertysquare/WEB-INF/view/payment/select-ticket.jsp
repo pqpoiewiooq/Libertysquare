@@ -123,7 +123,7 @@
 
             <% if(!event.isOnline()) { %>
                 <div class="payment-event-map-wrapper">
-                    <iframe style="width: 100%; height: 100%; border: 0;" loading="lazy" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBvGKFCLL6khttyoTqy_7haBhgoA2pPR6Q&q=<%=event.getVenue()%>" allowfullscreen></iframe>
+                    <iframe style="width: 100%; height: 100%; border: 0;" loading="lazy" src="https://www.google.com/maps/embed/v1/place?key=GOOGLE_MAP_KEY=<%=event.getVenue()%>" allowfullscreen></iframe>
                 </div>
             <% } %>
 

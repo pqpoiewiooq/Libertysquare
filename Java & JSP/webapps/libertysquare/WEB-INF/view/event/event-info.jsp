@@ -113,7 +113,7 @@
 	<link rel="stylesheet" type="text/css" href="https://ls2020.cafe24.com/css/ls/layout.css">
 	<link rel="stylesheet" type="text/css" href="https://ls2020.cafe24.com/css/ls/event.css">
 	
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8045181453001492" crossorigin="anonymous"></script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=GOOGLE_AD_KEY" crossorigin="anonymous"></script>
 </head>
 <body>
 	<%@ include file="/WEB-INF/view/header.jsp" %>
@@ -250,7 +250,7 @@
 			<article class="location-container">
 				<% if(!event.isOnline()) { %>
 				<div class="map-container">
-					<iframe style="width: 100%; height: 100%; border: 0;" loading="lazy" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBvGKFCLL6khttyoTqy_7haBhgoA2pPR6Q&q=<%=venue%>" allowfullscreen></iframe>
+					<iframe style="width: 100%; height: 100%; border: 0;" loading="lazy" src="https://www.google.com/maps/embed/v1/place?key=GOOGLE_MAP_KEY=<%=venue%>" allowfullscreen></iframe>
 				</div>
 				<div class="location-label">장소</div>
 				<div class="location-name"><%=venue%></div>
@@ -320,7 +320,7 @@
 			<article class="location-container">
 				<% if(!event.isOnline()) { %>
 				<div class="map-container">
-					<iframe style="width: 100%; height: 100%; border: 0;" loading="lazy" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBvGKFCLL6khttyoTqy_7haBhgoA2pPR6Q&q=<%=venue%>" allowfullscreen></iframe>
+					<iframe style="width: 100%; height: 100%; border: 0;" loading="lazy" src="https://www.google.com/maps/embed/v1/place?key=GOOGLE_MAP_KEY=<%=venue%>" allowfullscreen></iframe>
 				</div>
 				<div class="location-name"><%=venue%></div>
 				<div class="location-label"><%=venueDetail%></div>

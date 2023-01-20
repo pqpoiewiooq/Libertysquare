@@ -11,8 +11,8 @@ import account.User;
 
 @SuppressWarnings("rawtypes")
 public class NiceHelper {
-	private static final String sSiteCode = "BV054";
-	private static final String sSitePassword = "0F7x0T6jOroK";
+	private static final String sSiteCode = "SITE_CODE";
+	private static final String sSitePassword = "SITE_PW";
 
 	private static final String CUSTOMIZE_WEB = "";
 	private static final String CUSTOMIZE_MOBILE = "Mobile";

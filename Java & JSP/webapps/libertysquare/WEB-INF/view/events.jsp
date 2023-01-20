@@ -7,4 +7,4 @@
     </article>
 </section>
 <script type="text/javascript" src="https://ls2020.cafe24.com/js/ls/events.js"></script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8045181453001492" crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=GOOGLE_AD_KEY" crossorigin="anonymous"></script>

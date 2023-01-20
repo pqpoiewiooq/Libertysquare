@@ -69,7 +69,7 @@
 	<link rel="stylesheet" type="text/css" href="https://ls2020.cafe24.com/css/ls/layout.css">
 	<link rel="stylesheet" type="text/css" href="https://ls2020.cafe24.com/css/ls/event.css">
 
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8045181453001492" crossorigin="anonymous"></script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=GOOGLE_AD_KEY" crossorigin="anonymous"></script>
 </head>
 <body>
 	<%@ include file="/WEB-INF/view/header.jsp" %>

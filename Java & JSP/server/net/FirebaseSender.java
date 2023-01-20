@@ -16,7 +16,7 @@ import util.JsonUtil;
 
 public class FirebaseSender {
 	private static final String URL = "https://fcm.googleapis.com/fcm/send";
-	private static final String AUTHORIZATION = "key=AAAAYmO548k:APA91bF0AlE6UxLt8p_ECh_hsMeBg0lPs3-6fQdalkcYTbxatsr2JXhh1hW863TPE1_t9CakqnGV0IwkW8EpWOCVy1dcrV-dUisEb3IfpKye5v1sK41Ln87u1xjYHGtRDIZpEZ-ryFei";
+	private static final String AUTHORIZATION = "key=FIREBASEKEY";
 	private static final String ENC = "UTF-8";
 	
 	private static ExecutorService executor = Executors.newSingleThreadExecutor();

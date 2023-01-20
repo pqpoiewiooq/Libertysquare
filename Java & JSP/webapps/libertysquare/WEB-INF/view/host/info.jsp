@@ -20,7 +20,7 @@
 <h2 class="host-info-title">장소</h2>
 	<div class="host-info-introduce">
 		<% if(!isEmptyVenue) { %>
-			<iframe style="width: 100%; height: 100%; border: 0;" loading="lazy" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBvGKFCLL6khttyoTqy_7haBhgoA2pPR6Q&q=<%= host.getVenue() %>" allowfullscreen></iframe>
+			<iframe style="width: 100%; height: 100%; border: 0;" loading="lazy" src="https://www.google.com/maps/embed/v1/place?key=GOOGLE_MAP_KEY=<%= host.getVenue() %>" allowfullscreen></iframe>
 		<% } %>
 		<p><%= isEmptyVenue ? detailVenue : (isEmptyDetailVenue ? venue : venue + ", " + detailVenue) %></p>
 	</div>

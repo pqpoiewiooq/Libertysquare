@@ -41,19 +41,19 @@
         iframe.style.border = "0";
         iframe.loading = "lazy";
         iframe.setAttribute("allowfullscreen", "");
-        iframe.src = "https://www.google.com/maps/embed/v1/place?key=AIzaSyBvGKFCLL6khttyoTqy_7haBhgoA2pPR6Q&q=" + encodeURIComponent(input.value ? input.value : input.placeholder);
+        iframe.src = "https://www.google.com/maps/embed/v1/place?key=GOOGLE_MAP_KEY=" + encodeURIComponent(input.value ? input.value : input.placeholder);
         container.appendChild(iframe);
 
         input.addEventListener('change', function(event) {
             event.stopImmediatePropagation();
-            iframe.src = "https://www.google.com/maps/embed/v1/place?key=AIzaSyBvGKFCLL6khttyoTqy_7haBhgoA2pPR6Q&q=" + encodeURIComponent(input.value);
+            iframe.src = "https://www.google.com/maps/embed/v1/place?key=GOOGLE_MAP_KEY=" + encodeURIComponent(input.value);
         }, false);
 
         searchBox.addListener('places_changed', function() {
             var places = searchBox.getPlaces();
             if(places.length == 0) return;
 			
-            iframe.src = "https://www.google.com/maps/embed/v1/place?key=AIzaSyBvGKFCLL6khttyoTqy_7haBhgoA2pPR6Q&q=" + encodeURIComponent(places[0].formatted_address);
+            iframe.src = "https://www.google.com/maps/embed/v1/place?key=GOOGLE_MAP_KEY=" + encodeURIComponent(places[0].formatted_address);
         });
 
         window.initMap = undefined;
@@ -138,7 +138,7 @@
         iframe.style.border = "none";
         iframe.loading = "lazy";
         iframe.setAttribute("allowfullscreen", "");
-        iframe.src = "https://www.google.com/maps/embed/v1/place?key=AIzaSyBvGKFCLL6khttyoTqy_7haBhgoA2pPR6Q&q=" + q;
+        iframe.src = "https://www.google.com/maps/embed/v1/place?key=GOOGLE_MAP_KEY=" + q;
     }
 
     function createMarker(place) {

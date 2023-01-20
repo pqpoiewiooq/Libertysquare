@@ -14,7 +14,7 @@ import com.google.gson.JsonParser;
 
 public class KakaoApi {
 	private static final String CID = "TC0ONETIME";//테스트용 CID
-	private static final String ADMIN_KEY = "ffe87c7479e306ec45e08340a518485b";
+	private static final String ADMIN_KEY = "ADMIN_KEY";
 	
 	public static final int APP = 1;
 	public static final int PC = 2;

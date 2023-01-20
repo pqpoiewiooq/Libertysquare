@@ -1,4 +1,4 @@
-const AD_CLIENT_KEY = 'ca-pub-8045181453001492';
+const AD_CLIENT_KEY = 'GOOGLE_AD_KEY';
 
 (function() {
 	const adsbygoogleScript = document.createElement('script');

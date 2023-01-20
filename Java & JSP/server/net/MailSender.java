@@ -27,8 +27,8 @@ import exception.MyServletException;
 public class MailSender {
 	private static final MyServletException EXCEPTION = new MyServletException(HttpServletResponse.SC_BAD_GATEWAY, "Mail server communication error");
 	
-	private static final String SENDER = "khc981212@gmail.com";
-	private static final String RECEIVER = "libertysquare.data@gmail.com";
+	private static final String SENDER = "SENDER@gmail.com";
+	private static final String RECEIVER = "RECEIVER@gmail.com";
 	
 	private MailSender() {}
 	
@@ -174,7 +174,7 @@ public class MailSender {
 		@Override
 		protected PasswordAuthentication getPasswordAuthentication() {
 			if(authenticator == null) {
-				authenticator = new PasswordAuthentication(SENDER, "lzlagvupinwntgdv");// Sender 계정 id / pw
+				authenticator = new PasswordAuthentication(SENDER, "PW");// Sender 계정 id / pw
 			}
 			return authenticator;
 		}

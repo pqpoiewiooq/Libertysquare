@@ -20,7 +20,7 @@
 	<script type="text/javascript" src="https://ls2020.cafe24.com/js/ls/list.js"></script>
 	<script type="text/javascript" src="https://ls2020.cafe24.com/js/popup.js"></script>
 	
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8045181453001492" crossorigin="anonymous"></script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=GOOGLE_AD_KEY" crossorigin="anonymous"></script>
 	<meta name="naver-site-verification" content="6e23e53c9cb2471973250a1801e9e2d3b6579578" />
 </head>
 <body>

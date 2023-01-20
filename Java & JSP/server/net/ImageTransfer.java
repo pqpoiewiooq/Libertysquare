@@ -17,8 +17,8 @@ public class ImageTransfer {
 	private static ImageTransfer instance = null;
 	private static final String IP = "ls2020.cafe24.com";
 	private static final int PORT = 21;// Commons-net은 SFTP(3822) 미지원
-	private static final String ID = "ls2020";
-	private static final String PW = "LibertySqaure1!";
+	private static final String ID = "ID";
+	private static final String PW = "PW";
 	
 	private static final int SO_TIMEOUT = 60 * 5;// 5분
 	private static final long KEEP_ALIVE_TIMEOUT = SO_TIMEOUT - 60;// 4분
