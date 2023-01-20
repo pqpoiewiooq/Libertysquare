@@ -1,0 +1,27 @@
+@import "/src/common/styles/index";
+
+$hastagColor: adjust-color($colorTertiary, 72, -13, -11);
+
+.hashtag {
+	color: $hastagColor;
+	font-size: $textSize - 2px;
+	margin-top: 4px;
+	margin-right: 14px;
+	cursor: pointer;
+	word-break: normal;
+
+	&::before {
+		content: "×";
+		border: 1px solid $hastagColor;
+		border-radius: 2px;
+		padding: 0px 3px;
+		margin-right: 4px;
+		font-size: $textSize - 5px;
+		display: inline-block;
+	}
+
+	&:hover::before {
+		background-color: rgba(adjust-color($colorTertiary, 0, -38, 3), .15);
+		color: adjust-color($colorTertiary, 72, 13, 15);
+	}
+}

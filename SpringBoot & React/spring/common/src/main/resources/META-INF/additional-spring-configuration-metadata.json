@@ -1,0 +1,48 @@
+{"properties": [
+  {
+    "name": "spring.env.time-zone",
+    "type": "java.lang.String",
+    "description": "Server date time zone"
+  },
+  {
+    "name": "spring.env.enc",
+    "type": "java.lang.String",
+    "description": "Server encoding"
+  },
+  
+  
+  
+  {
+    "name": "spring.firebase.key",
+    "type": "java.lang.String",
+    "description": "Firebase key"
+  },
+  {
+    "name": "spring.firebase.enc",
+    "type": "java.nio.charset.Charset",
+    "description": "Firebase message encoding"
+  },
+  
+  
+  
+  {
+    "name": "spring.jwt.secret",
+    "type": "java.lang.String",
+    "description": "Used when generating jwt key"
+  },
+  {
+    "name": "spring.jwt.algorithm",
+    "type": "io.jsonwebtoken.SignatureAlgorithm",
+    "description": "Used when generating jwt"
+  },
+  {
+    "name": "spring.jwt.access-token-expire",
+    "type": "java.lang.Long",
+    "description": "JWT access token expiration time"
+  },
+  {
+    "name": "spring.jwt.refresh-token-expire",
+    "type": "java.lang.Long",
+    "description": "JWT refresh token expiration time"
+  }
+]}

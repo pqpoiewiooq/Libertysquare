@@ -1,0 +1,18 @@
+@import "/src/common/styles/index";
+
+.container {
+	display: flex;
+	margin: 14px 0 0 -22px;
+	padding: 34px 25px 50px;
+
+	flex-wrap: wrap;
+} 
+
+.no-content-container {
+	display: flex;
+	height: 100px;
+	color: adjust-color($textColorPrimary, 32, 32, 32);
+
+	-webkit-box-pack: center;
+	justify-content: center;
+}

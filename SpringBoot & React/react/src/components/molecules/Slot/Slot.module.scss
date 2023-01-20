@@ -1,0 +1,54 @@
+@import "/src/common/styles/index";
+
+.container {
+	margin-bottom: 40px;
+	display: block;
+
+	@include desktop {
+		margin-bottom: 50px;
+		display: flex;
+		
+		&.full {
+			display: block;
+		}
+	}
+}
+
+.head {
+	@include desktop {
+		flex: 1 1 0%;
+		padding-right: 20px;
+		word-break: keep-all;
+	}
+}
+
+.title {
+	font-size: $textSize + 1px;
+	font-weight: bold;
+	letter-spacing: -0.2px;
+	margin-bottom: 12px;
+
+	@include desktop {
+		font-size: $textSize + 4px;
+	}
+}
+
+.desc {
+	font-size: $textSize - 3px;
+	font-weight: 300;
+	letter-spacing: -0.1px;
+	margin-top: -6px;
+	margin-bottom: 12px;
+
+	@include desktop {
+		font-size: $textSize - 1px;
+	}
+}
+
+.body {
+	padding-top: 4px;
+
+	@include desktop {
+		flex: 1 1 0%;
+	}
+}

@@ -1,0 +1,21 @@
+@import "/src/common/styles/index";
+
+.ticket-add-button {
+	line-height: 38px;
+	font-weight: bold;
+	text-align: center;
+	outline: 0;
+	padding: 0;
+	transition: background-color 0.3s ease 0s;
+	background-color: $colorBackground;
+	width: 100%;
+	height: 50px;
+	font-size: 18px;
+	letter-spacing: -0.2px;
+	border: 1px solid adjust-color($textColorSecondary, 32, 32, 32);
+	border-radius: 4px;
+
+	&:hover {
+		background-color: adjust-color($colorBackground, -41, -41, -41);
+	}
+}

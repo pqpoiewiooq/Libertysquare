@@ -1,0 +1,40 @@
+@import '/src/common/styles/index';
+
+.auth-container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 75px 24px 0;
+	background-color: adjust-color($colorBackgroundSecondary, 1, 1, 2);
+	-webkit-box-flex: 1;
+	-webkit-box-pack: start;
+	flex-grow: 1;
+	justify-content: center;
+
+	@include desktop {
+		margin-top: auto;
+		-webkit-box-pack: center;
+	}
+}
+
+.header {
+	margin-bottom: 75px;
+	text-align: center;
+}
+.logo {
+	display: inline-block;
+	width: 120px;
+	height: 78.6px;
+	background: url(/assets/image/logo_big.png) center center / 100% no-repeat;
+}
+.h1 {
+	letter-spacing: -.5px;
+	font-size: 30px;
+	margin-bottom: 0;
+}
+
+.form-container {
+	width: 100%;
+	max-width: 310px;
+	margin: 0 auto;
+}

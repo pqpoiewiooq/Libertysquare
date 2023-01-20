@@ -1,0 +1,54 @@
+@import "/src/common/styles/index";
+
+.container {
+	padding: 40px 24px;
+	
+	@include desktop {
+		padding: 0;
+	}
+}
+.item {
+	display: inline-flex;
+	min-width: 280px;
+	height: 99px;
+	margin: 0 10px 10px 0;
+	padding: 3px;
+	text-decoration: none;
+	border: none;
+	border-radius: 49.5px;
+	background-color: $colorBackground;
+	box-shadow: rgba($colorOnBackground, .1) 0 1px 4px 0;
+}
+.head {
+	position: relative;
+}
+.img {
+	width: 93px;
+	height: 93px;
+	border-radius: 50%;
+
+	flex-shrink: 0;
+	object-fit: cover;
+}
+.body {
+	display: flex;
+	flex-direction: column;
+	padding: 0 15px;
+
+	align-content: center;
+	align-self: center;
+}
+.name {
+	letter-spacing: -.2px;
+	color: adjust-color($textColorAccent, 10, 9, 24);
+	font-size: $textSize;
+	font-weight: bold;
+	line-height: 1.38;
+}
+.subscribe {
+	letter-spacing: -.2px;
+	color: #f95d61;
+	font-size: 15px;
+	line-height: 1.47;
+}
+

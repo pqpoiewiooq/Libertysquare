@@ -1,0 +1,23 @@
+{
+    "webcredentials": {
+        "apps": [
+            "ZX4T74N4NM.com.libertysquare.libertysquare"
+        ]
+    },
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "ZX4T74N4NM.com.libertysquare.libertysquare",
+                "paths": [
+                    "*"
+                ],
+                "components": [
+                    {
+                        "/": "/*"
+                    }
+                ]
+            }
+        ]
+    }
+}

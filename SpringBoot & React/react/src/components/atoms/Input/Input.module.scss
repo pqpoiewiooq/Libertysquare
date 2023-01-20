@@ -1,0 +1,33 @@
+@import '/src/common/styles/index';
+
+.input {
+	display: flex;
+	width: 100%;
+	height: $inputHeight;
+	padding: 0 17px;
+	border: 1px solid $textColorSecondary;
+	border-radius: 2px;
+	outline: none;
+	background-color: $colorBackground;
+	color: rgba($textColorAccent, .6);
+
+	align-items: center;
+
+	&.error {
+		border: 1px solid $colorError;
+	}
+	&.confirm {
+		border: 1px solid $colorConfirmSecondary;
+		color: $colorConfirm;
+		font-weight: 700;
+	}
+
+	&::placeholder {
+		color:$colorSecondary
+	}
+
+	&.styled {
+		color: inherit;
+		font-size: inherit;
+	}
+}

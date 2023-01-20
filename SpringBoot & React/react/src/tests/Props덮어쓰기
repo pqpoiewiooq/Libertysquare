@@ -1,0 +1,18 @@
+export type InputProps = {
+    abc: string
+} & React.InputHTMLAttributes<HTMLInputElement>;
+
+const Input = ({abc, ...props} : InputProps) => {
+	return (
+        <input
+            {...props}
+            value={abc}
+            >
+        </input>
+	);
+};
+
+Input.defaultProps = {
+    type: "text",
+    state: "normal"
+};

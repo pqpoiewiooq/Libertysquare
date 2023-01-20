@@ -1,0 +1,52 @@
+@import "/src/common/styles/index";
+
+.container {
+	display: flex;
+}
+
+.step-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+
+	@include desktop {
+		margin-top: 30px;
+	}
+}
+
+.title {
+	margin: 40px 0 0;
+	letter-spacing: -1px;
+	display: none;
+	font-size: 32px;
+
+	@include desktop {
+		display: block;
+		font-size: 36px;
+		letter-spacing: -0.5px;
+	}
+}
+
+.desc {
+	display: none;
+	font-size: 15px;
+	color: adjust-color($textColorPrimary, 43, 43, 43);
+	letter-spacing: -0.5px;
+	line-height: normal;
+	word-break: keep-all;
+
+	@include desktop {
+		display: block;
+		font-size: 18px;
+	}
+}
+
+.img {
+	display: none;
+	width: 260px;
+	height: 180px;
+
+	@include desktop {
+		display: block;
+		margin-left: auto;
+	}
+}

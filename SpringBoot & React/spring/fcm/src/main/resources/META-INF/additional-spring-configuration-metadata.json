@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "spring.firebase.fcm.authorization",
+    "type": "java.lang.String",
+    "description": "Firebase authorization. require 'key=' prefix"
+  },
+  {
+    "name": "spring.firebase.fcm.charset",
+    "type": "java.nio.charset.Charset",
+    "description": "Firebase message encoding charset"
+  }
+]}

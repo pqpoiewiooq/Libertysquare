@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+* {
+	box-sizing: border-box;
+	letter-spacing: -.5px;
+	word-break: keep-all;
+	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", "Noto Sans KR", Roboto, "Helvetica Neue", "Spoqa Han Sans", sans-serif;
+	overflow-wrap: break-word;
+	text-size-adjust: 100%;
+	line-height: normal;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	color: #4a4a4a;
+	font-size: 15px;
+}
+
+li {
+	float: left;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: inherit;
+	font-size: inherit;
+}
+
+button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	user-select: none;
+}
+
+button:disabled {
+	background: #e3e3e3;
+	cursor: default;
+	pointer-events: none;
+}
+
+input, textarea, select {
+	border: none;
+	outline: none;
+}
+textarea {
+	resize: none;
+}
+
+/*** input[type='search']의 x 표시 제거 ***/
+/* IE10 이하 */
+input::-ms-clear,
+input::-ms-reveal{
+    display:none;
+}
+/* Chrome */
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration{
+    display:none;
+}
+
+ins {
+	overflow: hidden;
+}

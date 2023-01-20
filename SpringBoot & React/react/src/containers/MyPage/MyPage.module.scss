@@ -1,0 +1,15 @@
+@import "/src/common/styles/index";
+
+.title {
+	letter-spacing: -1px;
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: $textSize + 12px;
+    margin: 46px 0 40px;
+
+	@include desktop {
+		font-size: $textSize + 14px;
+		letter-spacing: -0.5px;
+		margin-bottom: 20px;
+	}
+}

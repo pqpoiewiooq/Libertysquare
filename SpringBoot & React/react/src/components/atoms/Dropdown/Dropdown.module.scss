@@ -1,0 +1,27 @@
+@import '/src/common/styles/index';
+
+$arrowColor: adjust-color($textColorSecondary, -47, -47, -47);
+
+.__prototype__ {
+	content: '';
+	display: inline-block;
+	border-style: solid;
+	display: inline-block;
+	height: 0;
+	width: 0;
+	position: absolute;
+	right: 17px;
+	pointer-events: none;
+}
+
+.close::after {
+	border-color: $arrowColor transparent transparent;
+	border-width: 5px 5px 2.5px;
+	top: 50%;
+}
+
+.open::after {
+	border-color: transparent transparent $arrowColor;
+	border-width: 2.5px 5px 5px;
+	top: calc(50% - 5px);
+}

@@ -1,0 +1,41 @@
+@import "/src/common/styles/index";
+
+.inner {
+	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", "Noto Sans KR", Roboto, "Helvetica Neue", "Spoqa Han Sans", sans-serif;
+}
+
+.main {
+	display: block;
+	position: relative;
+	padding-top: 132px;
+
+	@media screen and (min-width: 700px) {
+		padding: 80px 80px 40px;
+	}
+}
+
+
+.bottom {
+	padding: 20px;
+	display: flex;
+	-webkit-box-pack: center;
+	justify-content: center;
+	margin-bottom: 70px;
+}
+
+.btn {
+	border: none;
+	border-radius: 8px;
+	background: $colorOnBackground;
+	color: $colorBackground;
+	font-weight: 700;
+	font-size: 15px;
+	padding: 20px;
+	width: 100%;
+
+	@media screen and (min-width: 510px) {
+		border-radius: 50px;
+		font-size: 20px;
+		padding: 30px 60px;
+	}
+}

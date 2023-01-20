@@ -1,0 +1,90 @@
+@import "/src/common/styles/index";
+
+.container {
+	display: flex;
+	width: 100%;
+	height: 70px;
+	padding: 16px;
+	border: 0;
+	border-radius: 3px;
+	outline: none;
+	background-color: adjust-color($textColorSecondary, 28, 28, 28);
+
+	align-items: center;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+
+	@include desktop {
+		width: 114px;
+		height: 108px;
+	}
+
+	&:hover {
+		background-color: $textColorSecondary;
+
+		& .icon-wrapper {
+			border: 1px solid $colorError;
+		}
+
+		& .icon {
+			color: $colorError;
+		}
+	}
+
+	&:active {
+		background-color: adjust-color($textColorSecondary, -36, -36, -36);
+
+		& .icon-wrapper {
+			border: 1px solid $colorError;
+		}
+
+		& .icon {
+			color: $colorError;
+		}
+	}
+}
+
+.icon-wrapper {
+	display: flex;
+	width: 35px;
+	height: 35px;
+	border: 1px solid $colorBackground;
+	border-radius: 50%;
+	background-color: $colorBackground;
+
+	align-items: center;
+	-webkit-box-align: center;
+	-webkit-box-flex: 0;
+	-webkit-box-pack: center;
+	flex-grow: 0;
+	justify-content: center;
+
+	@include desktop {
+		width: 56px;
+		height: 56px;
+	}
+}
+
+.icon {
+	display: inline-block;
+	overflow: hidden;
+	width: 24px;
+	height: 24px;
+	vertical-align: -.125em;
+	color: $textColorSecondary;
+}
+
+.inner {
+	display: block;
+	color: adjust-color($textColorSecondary, -81, -81, -81);
+	font-size: 18px;
+	font-weight: bold;
+
+	-webkit-box-flex: 1;
+	flex-grow: 1;
+
+	@include desktop {
+		display: none;
+	}
+}

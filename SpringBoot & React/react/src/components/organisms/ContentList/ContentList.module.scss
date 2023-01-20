@@ -1,0 +1,56 @@
+@import "/src/common/styles/index";
+
+$responsiveCriteria: 700px;
+
+.box {
+	margin-bottom: 40px;
+	padding: 0;
+	
+	@include min-width($responsiveCriteria) {
+		margin-bottom: 80px;
+	}
+}
+
+.box li {
+	float: none;
+}
+
+.title {
+	margin-bottom: 1px;
+	padding: 0 17px;
+	letter-spacing: -1.64px;
+	color: $textColorAccent;
+	font-size: 24px;
+	font-weight: 700;
+
+	@include min-width($responsiveCriteria) {
+		font-size: 35px;
+	}
+}
+
+.description {
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: -.84px;
+	color: adjust-color($textColorPrimary, 51, 51, 51);
+	margin-bottom: 19px;
+	padding: 0 17px;
+
+	@include min-width($responsiveCriteria) {
+		font-size: 18px;
+		margin-bottom: 22px;
+	}
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	margin-left: -11px;
+	padding: 0 15px;
+
+	flex-wrap: wrap;
+
+	@include min-width(510px) {
+		margin-left: -15px;
+	}
+}

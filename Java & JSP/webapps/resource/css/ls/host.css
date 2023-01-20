@@ -1,0 +1,120 @@
+html, body, #root {font-size: 16px;}
+
+#root {width: 100%; max-width: 1012px; margin: auto;}
+#content {padding: 23px 20px 25px;}
+
+.host-banner-container {position: relative; padding-top: 22.875%; width: 100%; text-align: center; z-index: 0;}
+.host-banner {position: fixed; top: 0; left: 0; right: 0; width: 100%; padding-top: 22.875%; max-width: 1012px; margin: auto;}
+
+.host-content-container {width: 100%; position: relative; z-index: 1; background-color: #fff;}
+
+.host-info-container {padding: 29px 24px 36px; display: flex; flex-direction: column;}
+.host-info-image {border-radius: 50%; width: 95px; height: 95px;}
+.host-info-name {margin-top: 22px; font-size: 20px; font-weight: bold; letter-spacing: -0.9px; word-break: keep-all; color: #000;}
+.host-info-since {color: #8a8a8a; margin-top: 0; font-size: 11px;}
+.host-info-introduce-simple {margin-top: 12px; font-size: 12px; letter-spacing: -0.3px; color: #242424; word-break: keep-all; max-width: 80%;}
+
+.host-info-inner {display: flex; -webkit-box-align: center; align-items: center; margin-top: 12px; margin-left: 56px;}
+.host-like-button {background-color: transparent; border: 1px solid #fd365e; border-radius: 30px; padding: 8px 13px 8px 16px; color: #fd365e; font-size: 14px; font-weight: bold; position: absolute; right: 20px; top: 28px;}
+.host-like-button.like::after {content: 'x'; display: inline; position: relative; top: -0.125em; bottom: 0;}
+.host-like-num {display: inline-block; margin: 0 5px;}
+.host-meta-info {font-size: 11px; line-height: 1.45; letter-spacing: -0.1px; color: rgb(138, 138, 138); position: absolute; right: 20px; top: 71px;}
+
+.host-menu-bar {height: 50px; display: flex; -webkit-box-align: center; align-items: center; padding-left: 22px; padding-right: 22px; border-bottom: 1px solid rgba(228, 228, 228, 0.7);}
+.host-menu-bar > * + * {margin-left: 26px;}
+.host-menu {font-size: 13px; color: #242424; letter-spacing: -0.3px;}
+.host-menu.active {color: #ff2d54; font-weight: bold;}
+
+footer {max-width: 300px; margin: auto; padding-top: 20px; padding-bottom: 30px; text-align: center; color: #e08595;}
+.footer-logo-wrapper {display: inline-block; line-height: normal; padding-top: 2px; font-weight: bold; font-size: 1.2em;}
+.footer-copyright {font-size: 13px; letter-spacing: -0.8px; position: relative; left: -3px;}
+
+/***** event-list *****/
+.host-no-event-container {display: flex; -webkit-box-pack: center; justify-content: center; height: 100px; color: #6a6a6a;}
+.host-event-container {display: flex; flex-wrap: wrap; margin: 14px 0 0 -22px; padding: 34px 25px 50px;} 
+.host-event-item {margin: 0 0 22px 22px; width: 100%;}
+.host-event-item:last-child {margin-bottom: 0;}
+.host-event-item-head {width: 100%; padding-top: 56.25%; position: relative; overflow: hidden; box-shadow: rgb(0 0 0 / 10%) 0 1px 2px; border-radius: 4px;}
+.host-event-item-img {position: absolute; width: 100%; height: 100%; top: 0px; transition: transform 0.2s ease 0s;}
+.host-event-item-cover {background-color: rgba(35, 68, 52, 0.6); position: absolute; width: 100%; height: 100%; top: 0; border-top-left-radius: 4px; border-top-right-radius: 4px; transition: opacity 0.3s ease 0s, background-color 0.3s ease 0s;}
+.host-event-item-cover-inner {position: absolute; width: 100%; bottom: 8px; padding: 0 8px; display: flex; -webkit-box-align: baseline; align-items: baseline;}
+.host-event-item-cover-text {font-size: 13px; font-weight: bold; color: #fff; letter-spacing: -0.1px; margin-left: 5px;}
+.host-event-item-cover-text.price {margin-left: auto;}
+.host-event-item:hover .host-event-item-img {transform: scale(1.3);}
+.host-event-item:hover .host-event-item-cover {opacity: 1;}
+.host-event-item-body {height: 105px; padding-top: 10px; padding-left: 2px; position: relative;}
+.host-event-item-day {font-size: 14px; letter-spacing: -0.3px; color: #ff2d54;}
+.host-event-item-title {letter-spacing: -0.2px; line-height: 1.38; font-weight: bold; color: #0a0918; margin-top: 4px; text-overflow: ellipsis;}
+.host-event-item-host {font-size: 15px; letter-spacing: -0.3px; color: #777;}
+
+/***** info *****/
+.host-info-title {color: #000; font-weight: bold; letter-spacing: -0.4px; margin: 0px;}
+.host-info-introduce {word-break: break-word; margin-top: 14px;}
+.host-info-introduce p {font-size: 13px;}
+
+.organizer-container {margin-top: 40px;}
+.organizer-wrapper {margin-top: 14px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 10px 5px;}
+.organizer-item {display: flex; -webkit-box-align: center; align-items: center;}
+.organizer-item-profile-image {border-radius: 50%; width: 55px; height: 55px; word-break: keep-all; overflow-wrap: normal; overflow: hidden; background-image: linear-gradient(to top, #009efd, #2af598); display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center; color: #fff; font-weight: bold; flex-shrink: 0;}
+.organizer-item-name {margin-left: 13px; font-size: 13px; color: #242424; letter-spacing: -0.3px;}
+
+.host-since-wrapper {height: 1px; border-bottom: 1px solid rgba(228, 228, 228, 0.7); margin-top: 51px; padding: 5px 20px 0 0; font-size: 11px; color: #8a8a8a; letter-spacing: -0.1px; text-align: right;}
+
+/***** edit *****/
+.host-edit-menu-bar {border-top: 1px solid rgba(46, 62, 72, 0.15); max-width: 590px;}
+.host-edit-menu-item {display: inline-block; margin-top: -1px; padding-top: 8px; font-size: 13px; letter-spacing: -0.3px; color: rgba(0, 0, 0, 0.32);}
+.host-edit-menu-item.active {border-top: 1px solid #4a4a4a; color: inherit; font-weight: bold;}
+
+.host-edit-container {padding: 20px 0; max-width: 590px;}
+.host-edit-form-field {display: flex; flex-wrap: wrap; margin-bottom: 20px;}
+.host-edit-form-title {width: 100%; font-size: 18px; font-weight: bold;}
+.host-edit-form-sub-title {font-size: 11px;}
+.host-edit-form-body {width: 100%; display: flex; flex-wrap: wrap; margin-top: 10px;}
+.host-edit-form-body.since {margin-top: 10px; margin-bottom: 10px; -webkit-box-align: center; align-items: center;}
+.host-edit-form-datepickr {width: 122px; cursor: pointer;}
+.host-edit-form-since {margin-left: 25px; font-size: 20px; font-family: Lora, serif;}
+.host-edit-form-image-container {width: 100%; height: 100%; overflow: hidden; position: relative; display: flex; align-items: center; flex-direction: column;}
+.host-edit-form-image {position: relative;}
+.host-edit-form-image.profile {border-radius: 50%; width: 150px; height: 150px; margin: auto;}
+.host-edit-form-image.cover {width: 100%; padding-top: 22.857%; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px; overflow: hidden;}
+div.host-edit-form-image.cover::after {content: '변경 (600:160)';}
+div.host-edit-form-image::after {content: '변경'; width: 100%; height: 100%; border-radius: inherit; background: rgba(255, 255, 255, 0.5); inset: 0px; position: absolute; cursor: pointer; display: flex; -webkit-box-pack: center; justify-content: center; -webkit-box-align: center; align-items: center; opacity: 0; font-weight: bold; transition: opacity 0.2s ease 0s, background-color 0.3s ease 0s;}
+div.host-edit-form-image:hover::after {opacity: 1;}
+
+@media screen and (min-width:548px) {
+    .host-event-item {width: calc(50% - 22px);}
+}
+
+@media screen and (min-width:800px) {
+    .host-event-item {width: calc(((100/3)*1%) - 22.01px);}
+}
+
+@media screen and (min-width:64em) {
+    .host-info-container {flex-direction: row;}
+    .host-info-image {width: 170px; height: 170px;}
+    .host-info-name {margin-top: 12px; margin-left: 48px; font-size: 32px; letter-spacing: -1.4px;}
+    .host-info-since {margin-top: 0; margin-left: 66px; font-size: 14px;}
+    .host-info-introduce-simple {margin-top: 10px; margin-left: 85px; font-size: 14px; letter-spacing: -0.4px; max-width: 600px;}
+
+    .host-like-button {position: static; padding: 0 12px 0 15px; height: 36px; font-size: 15px;}
+    .host-meta-info {position: static; font-size: 14px; margin-left: 22px;}
+
+    /***** event-list *****/
+    .host-event-item-cover {opacity: 0;}
+
+    /***** info *****/
+    .host-info-title {letter-spacing: -0.5px; font-size: 20px;}
+    .host-info-introduce {margin-top: 16px;}
+    .host-info-introduce p {font-size: 15px; letter-spacing: -0.4px; line-height: 1.6;}
+
+    .organizer-wrapper {margin-top: 21px;}
+    .organizer-item-profile-image {width: 60px; height: 60px; font-size: 18px;}
+    .organizer-item-name {margin-left: 14px; font-size: 15px; letter-spacing: -0.4px;}
+
+    .host-since-wrapper {font-size: 14px;}
+
+    /***** edit *****/
+}

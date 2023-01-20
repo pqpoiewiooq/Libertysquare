@@ -1,0 +1,16 @@
+@import "/src/common/styles/index";
+
+.terms-container {
+	display: flex;
+	margin-top: 20px;
+	-webkit-box-align: center;
+	align-items: center;
+}
+
+.terms {
+	font-size: $textSize - 3px;
+
+	& a {
+		color: orangered;
+	}
+}

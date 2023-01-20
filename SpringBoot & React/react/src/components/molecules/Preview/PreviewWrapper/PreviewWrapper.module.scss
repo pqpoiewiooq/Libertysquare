@@ -1,0 +1,67 @@
+@import "/src/common/styles/index";
+
+@keyframes pageAnimation {
+	0% {
+		max-height: 0px;
+	}
+	99% {
+		max-height: 9999px;
+	}
+	100% {
+		max-height: fit-content;
+	}
+}
+
+.wrapper {
+	width: calc(100% + 48px);
+	margin-left: -24px;
+	padding: 15px 24px;
+	border-radius: 3px;
+	background-color: $colorBackgroundSecondary;
+
+	&.page {
+		margin-bottom: 30px;
+		overflow: hidden;
+		transition: max-height 1s linear;
+		animation: pageAnimation 1s linear backwards;
+
+		@include desktop {
+			padding: 35px 45px;
+			margin-left: 0;
+			width: unset;
+		}
+	}
+
+	@include desktop {
+		width: unset;
+		margin-left: 0;
+		padding: 15px 20px;
+
+		&.small {
+			max-width: 650px;
+			padding: 20px 30px;
+			border-radius: 3px;
+			font-size: $textSize + 4px;
+		}
+	}
+}
+
+.title {
+	font-size: $textSize + 2px;
+	font-weight: 700;
+
+	@include desktop {
+		font-size: $textSize + 4px;
+	}
+}
+
+.desc {
+	margin-top: 3px;
+	font-size: $textSize - 2px;
+	font-weight: 400;
+
+	@include desktop {
+		font-size: $textSize - 1px;
+		font-weight: 300;
+	}
+}

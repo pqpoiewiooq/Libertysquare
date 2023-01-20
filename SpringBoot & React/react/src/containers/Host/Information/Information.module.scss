@@ -1,0 +1,103 @@
+@import "/src/common/styles/index";
+
+.title {
+	margin: 0;
+	letter-spacing: -.4px;
+	color: $textColorAccent;
+	font-weight: bold;
+
+	@include desktop {
+		letter-spacing: -.5px;
+		font-size: $textSize + 4px;
+	}
+}
+.introduce {
+	margin-top: 14px;
+	word-break: break-word;
+
+	@include desktop {
+		margin-top: 16px;
+	}
+	& p {
+		font-size: $textSize - 3px;
+
+		@include desktop {
+			letter-spacing: -.4px;
+			font-size: $textSize - 1px;
+			line-height: 1.6;
+		}
+	}
+}
+
+.container {
+	margin-top: 40px;
+}
+.wrapper {
+	display: grid;
+	margin-top: 14px;
+
+	gap: 10px 5px;
+	grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+
+	@include desktop {
+		margin-top: 21px;
+	}
+}
+.item {
+	display: flex;
+
+	align-items: center;
+	-webkit-box-align: center;
+}
+.item-icon {
+	display: flex;
+	overflow: hidden;
+	width: 55px;
+	height: 55px;
+	word-break: keep-all;
+	border-radius: 50%;
+	background-image: linear-gradient(to top, #009efd, #2af598);
+	color: #ffffff;
+	font-weight: bold;
+
+	align-items: center;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	flex-shrink: 0;
+
+	justify-content: center;
+	overflow-wrap: normal;
+
+	@include desktop {
+		width: 60px;
+		height: 60px;
+		font-size: $textSize + 2px;
+	}
+}
+.item-name {
+	margin-left: 13px;
+	letter-spacing: -.3px;
+	color: adjust-color($textColorPrimary, -38, -38, -38);
+	font-size: $textSize - 3px;
+
+	@include desktop {
+		margin-left: 14px;
+		letter-spacing: -.4px;
+		font-size: $textSize - 1px;
+	}
+}
+
+.since {
+	height: 1px;
+	margin-top: 51px;
+	padding: 5px 20px 0 0;
+	text-align: right;
+	letter-spacing: -.1px;
+	border-bottom: 1px solid rgba(adjust-color($colorBackground, -27, -27, -27), .7);
+	color: adjust-color($textColorTertiary, 19, 19, 19);
+	font-size: 11px;
+
+	@include desktop {
+		font-size: $textSize - 2px;
+	}
+}

@@ -1,0 +1,41 @@
+https://pathas.tistory.com/227
+
+
+
+
+export default function createItemsLogic(name) {
+  // 액션 타입
+  const ADD = `${name}/ADD`;
+  const REMOVE = `${name}/REMOVE`;
+  const EDIT = `${name}/EDIT`;
+
+  // 액션 생성자 함수
+  const add = (item) => ({ type: ADD, item });
+  const remove = (item) => ({ type: REMOVE, item });
+  const edit = (item) => ({ type: EDIT, item });
+
+  // 리듀서
+  const reducer = createReducer(
+    // 초기 상탯값으로 빈 배열 입력
+    { [name]: [] },
+    {
+      [ADD]: (state, action) => state[name].push(action.item),
+      [REMOVE]: (state, action) => {
+        const index = state[name].findIndex(
+          (item) => item.id === action.item.id
+        );
+        state[name].splice(index, 1);
+      },
+      [EDIT]: (state, action) => {
+        const index = state[name].findIndex(
+          (item) => item.id === action.item.id
+        );
+        if (index >= 0) {
+          state[name][index] = action.item;
+        }
+      },
+    }
+  );
+
+  return { add, remove, edit, reducer };
+}

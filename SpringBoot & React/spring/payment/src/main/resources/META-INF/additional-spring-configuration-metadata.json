@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "spring.payment.toss.key",
+    "type": "java.lang.String",
+    "description": "Toss payment secret key"
+  },
+  {
+    "name": "spring.payment.timeout",
+    "type": "java.lang.Integer",
+    "description": "Set a specified timeout value, in milliseconds, to be used for payment"
+  }
+]}

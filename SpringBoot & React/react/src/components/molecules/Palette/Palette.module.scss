@@ -1,0 +1,58 @@
+@import "/src/common/styles/index";
+
+$paletteBackground: adjust($colorBackground, -15);
+
+.palette {
+	width: 276px;
+    background: $colorBackground;
+    border: 0 solid rgba($colorOnBackground, .25);
+    box-shadow: rgba($colorOnBackground, .25) 0 1px 4px;
+    border-radius: 4px;
+    position: relative;
+	padding: 15px 9px 9px 15px;
+}
+
+.paint {
+	position: relative;
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin: 0 6px 6px 0;
+	border-radius: 4px;
+	outline: none;
+	cursor: pointer;
+}
+
+.hash {
+	background: $paletteBackground;
+	display: flex;
+	float: left;
+	width: 30px;
+	height: 30px;
+	border-radius: 4px 0 0 4px;
+	color: adjust-color($textColorTertiary, 33, 42, 45);
+
+	align-items: center;
+	justify-content: center;
+}
+
+.input-wrapper {
+	position: relative;
+}
+
+.input {
+	width: 100px; font-size: $textSize - 2px;
+	color: adjust($textColorPrimary, 102);
+	border: 0px;
+	outline: none;
+	height: 28px;
+	box-shadow: $paletteBackground 0 0 0 1px inset;
+	box-sizing: content-box;
+	border-radius: 0 4px 4px 0;
+	float: left;
+	padding-left: 8px;
+
+	&.wrong {
+		box-shadow: $colorError 0 0 0 1px inset;
+	}
+}

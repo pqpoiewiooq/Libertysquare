@@ -1,0 +1,11 @@
+@mixin min-width($size) {
+	@media screen and (min-width: $size) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@include min-width(64em) {
+		@content;
+	}
+}

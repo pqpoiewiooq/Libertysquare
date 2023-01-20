@@ -1,0 +1,13 @@
+@import '/src/common/styles/index';
+
+.default {
+	margin-bottom: 6px;
+	font-size: $textSizeLabel;
+	font-weight: bold;
+
+	&.required::after {
+		margin-left: 2px;
+		content: "*";
+		color: $colorError;
+	}
+}

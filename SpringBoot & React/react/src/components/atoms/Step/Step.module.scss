@@ -1,0 +1,27 @@
+@import "/src/common/styles/index";
+
+.step {
+	font-size: $textSize - 3px;
+	font-weight: bold;
+	color: $textColorPrimary;
+	display: none;
+
+	.current {
+		display: inline;
+	}
+
+	@include desktop {
+		display: inline;
+	}
+
+	.current ~ & {
+		color: $textColorSecondary;
+	}
+
+	&:not(:last-child)::after {
+		content: '>';
+		font-size: $textSize - 1px;
+		font-weight: normal;
+		margin: 0 18px;
+	}
+}

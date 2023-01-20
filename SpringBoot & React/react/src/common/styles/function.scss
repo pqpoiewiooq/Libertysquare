@@ -1,0 +1,3 @@
+@function adjust($color, $rgb){
+    @return adjust-color($color, $rgb, $rgb, $rgb);
+}

@@ -1,0 +1,112 @@
+.document-container {
+	min-height: 700px;
+	margin: auto auto 100px;
+	padding: 0 20px;
+}
+
+.lnb {
+	display: none;
+	margin-bottom: 60px;
+}
+.lnb-link {
+	flex: 1 1 0;
+	height: 70px;
+	padding: 20px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	transition: background-color .2s ease 0s;
+}
+.lnb-link[active] {
+	border-bottom: 3px solid #4a4a4a;
+}
+.lnb-link:hover {
+	background-color: #eee;
+}
+
+.document-fomatter {
+	position: relative;
+	font-size: .9em;
+	line-height: 2.1;
+}
+.document-fomatter .loading-container {
+	padding-top: 50%;
+}
+
+.document-header {
+	margin-bottom: 40px;
+	letter-spacing: -1px;
+	font-size: 1.8em;
+}
+.document-header.mobile {
+	text-align: center;
+}
+.document-header.mobile--hidden {
+	display: none;
+}
+
+.document-section {
+	max-width: 780px;
+	margin-bottom: 100px;
+}
+
+.document-title {
+	font-size: 1.5em;
+}
+
+.document-hr {
+	margin-top: 24px;
+	border-top: 1px solid #dedede;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	border-image: initial;
+}
+
+.document-block {
+	margin-top: 40px;
+	margin-bottom: 70px;
+}
+.document-block h2 {
+	font-size: 1.5em;
+}
+.document-block h3 {
+	font-size: 1.2em;
+}
+.document-block p {
+	padding-left: 2px;
+}
+.document-block li {
+	float: none;
+	list-style: disc;
+}
+
+@media screen and (min-width:64em) {
+	.document-container {
+		max-width: 1060px;
+		padding: 0 24px;
+	}
+
+	.lnb {
+		display: flex;
+		margin-bottom: 60px;
+	}
+
+	.document-fomatter {
+		font-size: 1em;
+	}
+
+	.document-header {
+		letter-spacing: -.5px;
+		font-size: 2em;
+	}
+	.document-header.mobile {
+		display: none;
+	}
+	.document-header.mobile--hidden {
+		display: block;
+	}
+	.document-block h3 {
+		font-size: 1.17em;
+	}
+}

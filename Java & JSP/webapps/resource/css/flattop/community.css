@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+* {margin: 0;padding: 0; user-select: none; -webkit-user-drag: none;}
+
+li {float: left; list-style: none}
+a {text-decoration: none}
+a:not([href]), a[href=''] {cursor: text;}
+button {cursor: pointer; outline: none; border: none;}
+hr {clear: both;width: 100%;height: 0;border: 0;}
+img {width: 100%;height: auto;}
+time {color: #a6a6a6;letter-spacing: 0;}
+input {ime-mode: active;}
+
+/* ... */
+.card {margin-bottom: 5px;border: 1px solid #d6d6d6;background-color: #f9f9f9;}
+.card h3 {padding: 10px;}
+.card h3 > a {line-height: 20px;color: #c62917;font-size: 14px;font-weight: bold;display: block;}
+.card h3 > a > span {float: right;line-height: 20px;color: #a6a6a6;font-size: 12px;font-weight: normal;}
+
+/* 공통 */
+.post > .thumbnail {float: right;margin: -5px -5px -5px 15px;width: 80px;height: 80px;background-size: cover;}
+#main, #rightside { position: relative; }
+#main .post > .title, #rightside .post > .title {height: 18px;font-weight: bold;white-space: nowrap;text-overflow: ellipsis;}
+
+/* main */
+#main .card {float: left;margin: 0 5px 5px 0;width: 100%;border: 1px solid #e3e3e3;overflow: hidden;background-color: #fff;}
+#main .board > a:hover {background-color: #f9f9f9;}
+.board .post > time {float: left;margin-right: 10px;height: 14px;line-height: 14px;color: #a6a6a6;font-size: 11px;letter-spacing: 0;}
+.board .post > p {margin-bottom: 5px;height: 36px;line-height: 18px;white-space: normal;overflow: hidden;color: #444444;font-size: 13px;}
+.board .post > .thumbnail {width: 56px; height: 56px;}
+
+/* leftside */
+.logged {padding: 15px;}
+#leftside .picture {display: block;margin: 15px auto;width: 60px;height: 60px;border-radius: 50%;}
+.nickname {margin-bottom: 5px;line-height: 20px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;color: #393939;font-size: 18px;font-weight: bold;text-align: center;}
+.info {line-height: 15px;color: #a6a6a6;font-size: 12px;text-align: center;}
+.buttons {display:flex; margin-top: 15px;}
+.buttons li {float: left;width: 50%;}
+.buttons li a {display: block;margin-right: 5px;border: 1px solid #d6d6d6;border-radius: 3px;line-height: 25px;color: #737373;font-size: 13px;text-align: center;}
+.buttons li a.login {background: black; color: white;}
+.buttons li a.signup {background: #f9f9f9; color: black;}
+.menus > a {display: block;padding: 10px 0 10px 37px;border-bottom: 1px solid #e3e3e3;line-height: 20px;box-sizing: border-box;color: #444444;font-size: 14px;background-repeat: no-repeat;background-size: 12px auto;background-position: 15px center;}
+.menus > a.list {background-image: url(/icon/ic_list.png);}
+.menus > a.comment {background-image: url(/icon/ic_comment.png);}
+.menus > a.like {background-image: url(/icon/ic_like.png);}
+
+/* rightside */
+.search {margin-bottom: 5px;}
+.search input {width: 100%;height: 40px;line-height: 20px;padding: 10px;box-sizing: border-box;border: 2px solid #d6d6d6;color: #292929;font-size: 14px;background: transparent url(/icon/ic_search.png) no-repeat right center;background-size: 40px 40px;}
+.board > a {display: block;padding: 10px;border-top: 1px solid #e3e3e3;}
+.board > a:hover {background-color: #fff;}
+#rmightside .post {display: block;padding: 10px;border-top: 1px solid #e3e3e3;}
+#rightside .post > h4 {float: left;margin-right: 10px;height: 14px;line-height: 14px;color: #a6a6a6;font-size: 11px;font-weight: bold;letter-spacing: 0;}
+#rightside .post > .sall {height: 32px;line-height: 16px;color: #737373;font-size: 12px;}
+#rightside .post > time {float: left;margin-right: 10px;height: 14px;line-height: 14px;font-size: 11px;}
+#rightside .post > .thumbnail {float: right;margin-left: 10px;width: 72px;height: 54px;}
+.status > li {float: left;margin-right: 5px;padding-left: 15px;height: 14px;line-height: 14px;color: #a6a6a6;font-size: 11px;letter-spacing: 0;background-repeat: no-repeat;background-size: 11px 11px;background-position: left center;}
+.status > li.vote {color: #c62917;background-image: url(/icon/ic_status_vote_on.png);}
+.status > li.comment {color: #0ca5af;background-image: url(/icon/ic_status_comment_on.png);}
+.list > time {float: right;margin-left: 10px;height: 17px;line-height: 18px;color: #a6a6a6;font-size: 11px;letter-spacing: 0;}
+.list > p {height: 17px;line-height: 18px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;color: #444444;font-size: 14px;}
+#rightside .card h3 > a {color: #3744a5;}
+
+
+@media screen and (max-width:64em) {
+	#container {display: flex; flex-direction: column;}
+	.pconly {display: none !important;}
+	#banner {margin-bottom: 5px;width: 100%;overflow: hidden;}
+	#main {padding: 0 2px;}
+	#leftside ~ #main {order: 1;}
+	.card {border: 0;}
+	.banner {display: none;}
+	.menus {border: 1px solid #d6d6d6;background-color: #fff;}
+	.menus > a {float: left;padding: 10px 0;width: 33%;border-bottom: 0;border-right: 1px solid #e3e3e3;text-align: center;}
+	.menus > a:last-of-type {border-right: 0;}
+	#rightside .post:nth-of-type(3n) {display: none;}
+}
+
+@media screen and (min-width:64.1em) {
+	#container {max-width: 1080px;display: flex;box-sizing: border-box;position: relative;margin: 0 auto;min-height: 100vh;padding: 25px;}
+	#container.index {max-width: 1180px; padding: 25px 0;}
+	#container > *:not(:last-child) {margin-right: 25px;}
+	.mobileonly {display: none !important;}
+	#leftside {flex: 1.16; width: 0;}
+	#rightside {flex: 2.16; width: 0;}
+	#rightside:not(#leftside ~ #rightside) {flex: 1.5;}
+	#main {flex: 4.03;display: flex;flex-direction: column; width:0;}
+	#main > *:not(:last-child) {margin-bottom: 5px;}
+}
+
+
+/* editor 페이지 */
+.write {position: relative;margin-bottom: 5px;border: 2px solid #d6d6d6;box-sizing: border-box;}
+.write p {padding: 15px;border-bottom: 1px solid #e3e3e3;background-color: #fff;}
+.write .title {width: 100%;height: 20px;line-height: 20px;border: 0;color: #292929;font-size: 16px;font-weight: bold;outline: 0;}
+.write .content {width: 100%;height: 350px;border: 0;color: #292929;font-size: 14px;resize: none; outline: 0; display: inline-block; overflow: auto;}
+.write .content[contenteditable=true]:empty:before {content: attr(aria-placeholder);user-select: none;display: block;color: #999;font-size: 12px;white-space: pre-wrap;cursor: text;}
+.content img {width: auto;max-width: 100%;display: block;}
+.write .file {display: none;}
+.write .thumbnails {display: none;padding: 16px 12px 12px 16px;border-bottom: 1px solid #e3e3e3;}
+.write .thumbnails li {display: inline-block;margin: 0 4px 4px 0;width: 85px;height: 85px;border: 1px solid #d6d6d6;cursor: pointer;background-size: cover;}
+.write .thumbnails .new {background: transparent url(/icon/ic_plus.png) no-repeat center center;background-size: 24px 24px;}
+.write > .question {display: none;}
+.write > .question > span {padding: 8px;border-radius: 8px;line-height: 18px;color: #0CA5AF;font-size: 12px;background-color: #EEFBFC; height: auto; display: block;}
+.write .options li {width: 40px;height: 40px;background-repeat: no-repeat;background-position: center center;background-size: 40px 40px;cursor: pointer;}
+.write .options .hashtag {background-image: url(/icon/ic_hashtag.png); float: left;}
+.write .options .attach {background-image: url(/icon/ic_attach.png); float: left;}
+.write .options .submit {background-image: url(/icon/ic_write_white.png); float: right; background-color: #c62917;}
+.write .options .anonym {background-image: url(/icon/ic_anonym.png); float: right; margin-right: 15px;}
+.write .options .anonym.active {background-image: url(/icon/ic_anonym_active.png);}
+.write .options .question {background-image: url(/icon/ic_question.png); float: right; margin-right: 15px;}
+.write .options .question.active {background-image: url(/icon/ic_question_active.png);}
+
+
+
+/* board 페이지 */
+.wrap.title {padding: 15px;border: 1px solid #d6d6d6;box-sizing: border-box;}
+.wrap.title > h1 {line-height: 0;}
+.wrap.title > h1 > a {color: #292929;font-size: 22px;font-weight: bold;}
+.posts .post {display: block;padding: 15px;margin-bottom: -1px;box-sizing: border-box;border: 1px solid #e3e3e3;background-color: #fff;}
+.posts a.post:hover {background-color: #fbfbfb;}
+.posts .post > .nickname {float: left;max-width: 90px;height: 15px;line-height: 15px;font-size: 11px;font-weight: normal;letter-spacing: 0;}
+.posts .post > .when {float: left;margin-bottom: 5px;height: 20px;line-height: 20px;font-size: 12px;}
+.posts a.post > .title {margin-bottom: 5px;line-height: 18px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;font-size: 14px;font-weight: normal;}
+.posts a.post > .content {margin-bottom: 5px;max-height: 32px;line-height: 15px;white-space: normal;overflow: hidden;color: #a6a6a6;font-size: 12px;}
+.posts .post > time {float: left;margin-right: 5px;height: 15px;line-height: 15px;font-size: 11px;}
+.post > .status {float: right;}
+.post > .status.left {float: left;}
+.status > .photo {padding-left: 15px;color: #737373;background-image: url(/icon/ic_photo.png);}
+.posts .dialog {padding: 80px 0; color: #737373; font-size: 15px; text-align: center;}
+.pagination > a {display: block;margin-top: 10px;margin-left: 5px;padding: 0 10px 0 25px;height: 35px;line-height: 35px;border: 1px solid #000;border-radius: 3px;color: #000;font-size: 14px;font-weight: bold;background-repeat: no-repeat;background-position: 10px center;background-size: 10px 10px;cursor: pointer;}
+.pagination > a.first {float: left;background-image: url(/icon/ic_pagination_first.png);}
+.pagination > a.prev {float: left;background-image: url(/icon/ic_pagination_prev.png);}
+.pagination > a.next {float: right;margin-left: 0;margin-right: 5px;padding: 0 25px 0 10px;background-image: url(/icon/ic_pagination_next.png);background-position: right 10px center;}
+.pagination > form {float: left;margin-top: 5px;margin-left: 5px;padding: 8px 25px 8px 5px;border: 1px solid #a6a6a6;border-radius: 3px;background: transparent url(/icon/ic_search.png) no-repeat right center;background-size: 38px 38px;}
+.pagination > form > select {float: left;margin-right: 5px;height: 19px;line-height: 19px;color: #737373;font-size: 12px;background-color: transparent;}
+.pagination > form > input {height: 19px;line-height: 19px;width: 130px;color: #292929;font-size: 14px;background-color: transparent;}
+
+@media screen and (max-width:64em) {
+	.wrap.title {margin: 0 auto 5px;}
+
+	.new-post-button {display: inline-block;position: fixed;bottom: 40px;left: 50%;transform: translate(-50%, 0);border-radius: 50px;font-size: 14px;line-height: 36px;font-weight: bold;padding: 0 14px 0 30px;color: #fff;background: #000 url(/icon/ic_write_white.png) no-repeat 3px center;background-size: 30px 30px;}
+	.new-post-button::after {content: '글 쓰기';}
+}
+@media screen and (min-width:64.1em) {
+	.wrap {float: none;position: relative;}
+
+	.new-post-button {display: block;padding: 0 10px;height: 50px;line-height: 46px;border: 2px solid #d6d6d6;box-sizing: border-box;cursor: text;color: #a6a6a6;font-size: 14px;background: #f9f9f9 url(/icon/ic_write.png) no-repeat right center;background-size: 40px 40px;margin-bottom: 5px;}
+	.new-post-button::after {content: '새 글을 작성해 주세요!';}
+}
+
+
+
+
+/* post 페이지 */
+article.post .picture {float: left; margin: 0 10px 15px 0; width: 40px; height: 40px; border-radius: 50%;}
+article.post .profile {float: left; margin-bottom: 15px; height: 40px;}
+article.post .profile h3 {height: 20px;max-width: 200px;line-height: 20px;font-size: 14px;font-weight: bold;color: #292929;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+article.post .profile h3.small {max-width: 90px;margin: 0 10px 5px 0;font-size: 12px;}
+article.post .profile time {height: 20px;line-height: 20px;font-size: 12px;}
+.status > li:not([class]) {float: left;margin-left: 8px;margin-right: 0;padding: 0 2px;height: 20px;line-height: 20px;color: #a6a6a6;font-size: 12px;background-repeat: no-repeat;background-position: left center;background-size: 11px 11px;cursor: pointer;}
+.status > li.scrap {color: #ffcc1c;background-image: url(/icon/ic_status_scrap_on.png);}
+.status > li:empty {display: none;}
+#main article.post .title {margin-bottom: 15px;font-size: 22px;font-weight: bold;height: auto;white-space: normal;}
+article.post p {padding-bottom: 15px;line-height: 20px;color: #444444;font-size: 14px;}
+.buttons > span {margin-right: 4px;padding: 0 12px 0 27px;line-height: 30px;border-radius: 8px;color: #737373;font-size: 12px;font-weight: bold;cursor: pointer;background-color: #f9f9f9;background-repeat: no-repeat;background-position: left 12px center;background-size: 11px 11px;}
+.buttons > span.vote {background-image: url(/icon/ic_status_vote.png);}
+.buttons > span.vote.on {background-image: url(/icon/ic_status_vote_on.png); color: #c62917;}
+.buttons > span.scrap {background-image: url(/icon/ic_status_scrap.png);}
+.buttons > span.scrap.on {background-image: url(/icon/ic_status_scrap_on.png); color: #ffcc1c;}
+
+article.post.comment {padding-bottom: 0;}
+article.post.comment > .picture {margin: 0 5px 5px 0;width: 20px;height: 20px;}
+article.post.comment > h3 {float: left;max-width: 90px;margin: 0 10px 5px 0;font-size: 12px;}
+.comment.best {cursor: pointer;}
+.comment.best > h3::after {content: ' (BEST)'; color: #c62917;}
+.writer {color: #0ca5af;}
+article.post.comment > p {padding-bottom: 5px;}
+article.post.comment > time {margin-bottom: 10px;}
+.comment .comment {margin: -5px -11px 4px 20px;border: 1px solid #e3e3e3;background-color: #f9f9f9;}
+.comment .comment-form {margin: 0 -11px 4px 20px;}
+.comment-form {position: relative;background-color: #f8f8f8 !important;padding: 0 !important;}
+.comment-form > textarea {margin: 10px;padding-right: 95px;border: 0;width: 100%;height: 20px;line-height: 20px;box-sizing: border-box;color: #262626;font-size: 13px;overflow: hidden;resize: none;background-color: transparent;outline: 0; display: block;resize: none;overflow-y: scroll;}
+.comment-form > textarea {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+	-webkit-overflow-scrolling: touch;
+}
+.comment-form > textarea::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+.comment-form > .option {position: absolute;right: 0;bottom: 0;height: 40px;font-size: 0;}
+.comment-form > .option > li {display: inline-block;width: 40px;height: 40px;background-repeat: no-repeat;background-position: center center;background-size: 40px 40px;cursor: pointer;}
+.comment-form .option .submit {background-image: url(/icon/ic_write_white.png); background-color: #c62917;}
+.comment-form .option .anonym {background-image: url(/icon/ic_anonym.png); margin-right: 5px;}
+.comment-form .option .anonym.active {background-image: url(/icon/ic_anonym_active.png);}
+/* 광고 hegiht: 90px; */
+
+
+.content a, .comment a {text-decoration: underline; color: -moz-hyperlinkText; color: -webkit-link;}

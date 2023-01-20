@@ -1,0 +1,8 @@
+dependencies {
+	compileOnly 'com.fasterxml.jackson.core:jackson-annotations'
+	runtimeOnly project(':common')
+
+	implementation 'org.springframework.boot:spring-boot-autoconfigure'
+	compileOnly 'org.springframework.boot:spring-boot-autoconfigure-processor'
+	annotationProcessor 'org.springframework.boot:spring-boot-autoconfigure-processor'
+}

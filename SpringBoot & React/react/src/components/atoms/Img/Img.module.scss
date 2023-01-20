@@ -1,0 +1,54 @@
+@import "/src/common/styles/index";
+
+@keyframes image-loader-anim {
+	0% {
+		background-color: rgba($colorOnBackground, .2);
+	}
+	25% {
+		background-color: rgba($colorOnBackground, 1);
+	}
+	50% {
+		background-color: rgba($colorOnBackground, .2);
+	}
+	75% {
+		background-color: rgba($colorOnBackground, .2);
+	}
+	100% {
+		background-color: rgba($colorOnBackground, .2);
+	}
+}
+
+.loader:before {
+	position: absolute;
+	top: 0;
+	left: -25px;
+	width: 12px;
+	height: 12px;
+	border-radius: 12px;
+	content: "";
+	animation: image-loader-anim 3s ease-in-out infinite;
+}
+
+.loader {
+	position: absolute;
+	top: 46%;
+	left: 46%;
+	width: 12px;
+	height: 12px;
+	border-radius: 12px;
+	animation: image-loader-anim 3s ease-in-out infinite;
+	animation-delay: .6s;
+}
+
+
+.loader:after {
+	position: absolute;
+	top: 0;
+	left: 25px;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	content: "";
+	animation: image-loader-anim 3s ease-in-out infinite;
+	animation-delay: 1.2s;
+}

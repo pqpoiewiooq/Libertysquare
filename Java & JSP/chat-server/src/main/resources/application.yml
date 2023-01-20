@@ -1,0 +1,40 @@
+server:
+  shutdown: graceful
+
+spring:
+  # template 의존성 추가하기 싫어서 spring에서 제공하는 mvc 설정
+  mvc:
+    view:
+      suffix: .html
+  thymeleaf:
+    prefix: classpath:/static/
+    suffix: .html
+    cache: false
+    # templates 디렉토리에 파일이 있는지 없는지 체크, 없으면 에러를 발생시킨다.
+    check-template-location: true
+  jackson:
+    default-property-inclusion: non-null
+  redis:
+    host: 121.0.124.134
+    port: 6379
+  data:
+    cassandra:
+      username: chat_server
+      password: LibertySqaure1!
+      local-datacenter: datacenter1
+      pool:
+        heartbeat-interval: 10000
+      keyspace-name: chat
+      contact-points: 52.79.235.123
+      port: 9042
+      schema-action: create-if-not-exists
+  datasource:
+    url: jdbc:mysql://121.0.124.134:3306/lsweb?useunicode=true&character_set_server=utf8mb4&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Seoul&noAccessToProcedureBodies=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ChAt
+    password: H2@1h2#syAduvaR9c
+    
+      
+      
+#logging:
+#  config: classpath:log4j2.yml

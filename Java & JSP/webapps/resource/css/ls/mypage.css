@@ -1,0 +1,112 @@
+.mypage-header {letter-spacing: -1px; font-family: Montserrat; font-weight: 800; font-size: 28px; margin: 46px 0 40px;}
+
+.mypage-host-list-container {padding: 40px 24px;}
+.mypage-host-item {display: inline-flex; min-width: 280px; height: 99px; border: none; border-radius: 49.5px; box-shadow: rgb(0 0 0 / 10%) 0 1px 4px 0; background-color: #fff; text-decoration: none; margin: 0 10px 10px 0; padding: 3px;}
+.mypage-host-item-img {width: 93px; height: 93px; border-radius: 50%; flex-shrink: 0; object-fit: cover;}
+.mypage-host-item-body {display: flex; padding: 0 15px; flex-direction: column; align-self: center; align-content: center;}
+.mypage-host-item-name {font-size: 16px; font-weight: bold; line-height: 1.38; letter-spacing: -0.2px; color: #0a0918;}
+.mypage-host-item-like {font-size: 15px; line-height: 1.47; letter-spacing: -0.2px; color: #f95d61;}
+
+.mypage-profile-section {max-width: 312px; margin-bottom: 80px;}
+.mypage-profile-header {font-size: 30px; letter-spacing: -0.5px;}
+.mypage-profile-text {font-size: 16px; font-weight: 300; margin-bottom: 18px;}
+
+.mypage-event-spread-wrapper {width: 100%; background: #fff; display: flex; flex-wrap: wrap;}
+.mypage-event-spread-image {width: 100%; flex-shrink: 0; object-fit: cover;}
+.mypage-event-spread-info-box {margin: 0 24px;}
+.mypage-event-spread-title {display: block; margin: 14px 0 0; font-size: 25px; letter-spacing: -1px; word-break: keep-all; margin-block-start: 0.67em; font-weight: bold;}
+.mypage-event-spread-venue {font-size: 15px; margin-top: 5px; letter-spacing: -0.2px; color: #a4a4a4;}
+.mypage-event-spread-metainfo-box {margin-top: 39px; display: none;}
+.mypage-event-spread-metainfo-box > div:not(:first-child) {margin-top: 16px;}
+.mypage-event-spread-shortcuts {width: auto; height: auto; padding: 5px 20px; border-radius: 3px; letter-spacing: -0.1px; font-weight: bold; outline: none; user-select: none; text-align: center; position: relative; transition: background-color 0.1s ease 0s, color 0.1s ease 0s, border-color 0.1s ease 0s; border: 1px solid #4897d8; color: #4897d8; background-color: #fff; font-size: 13px; line-height: 1.15; -webkit-user-drag: none; display: inline-block; margin-top: 15px;}
+.mypage-event-spread-shortcuts:hover, .mypage-event-spread-shortcuts.focus {background-color: #fff; color: #5da3dc; border-color: #5da3dc;}
+.mypage-event-spread-shortcuts:active {background-color: #fff; color: #2570ae; border-color: #2570ae;}
+
+.mypage-ticket-list-container {height: 100%; margin: 50px auto auto; padding: 0 24px 140px;}
+.mypage-ticket-list-header {font-size: 25px; font-weight: bold;}
+.mypage-ticket-list-desc {font-size: 14px; font-weight: 300; letter-spacing: -0.1px;}
+.mypage-ticket-list-inner {margin-top: 30px;}
+.mypage-ticket-item {width: 100%; border-radius: 3px; border: 1px solid #ccccdc; background-color: #f8f8fa; padding: 9px 16px 13px; cursor: pointer; transition: box-shadow 0.15s ease 0s; margin-bottom: 10px; box-shadow: rgb(0 0 0 / 9%) 3px 2px 24px 0;}
+.mypage-ticket-item:hover {box-shadow: rgb(0 0 0 / 9%) 3px 2px 24px 0;}
+.mypage-ticket-item-name {font-size: 18px; font-weight: bold; letter-spacing: -0.1px; overflow: hidden; text-overflow: ellipsis;}
+.mypage-ticket-item-price {font-size: 15px; font-weight: 300; letter-spacing: -0.1px;}
+.mypage-ticket-item-desc {font-size: 14px; letter-spacing: -0.1px; margin-bottom: 5px;}
+.mypage-ticket-item-icon-text {display: inline-block; margin-left: 10px; font-weight: 300; font-size: 14px;}
+
+.ticket-modal {position: fixed; inset: 0;}
+.ticket-modal-slider {background-color: rgba(0, 0, 0, 0.5); position: fixed; top: 0; left: 0; right:0; bottom: 0; inset: 0; overflow: auto hidden; white-space: nowrap; display: inline-block; height: 100%; width: 100%; padding: 0 calc((100% - 316px) / 2);}
+.ticket-modal-card {box-sizing: border-box; display: inline-block; vertical-align: top; overflow: hidden auto; width: 316px; height: 100%; padding: 30px 8px 100px; transition: transform 0.1s ease 0s; -ms-overflow-style: none;}
+.ticket-modal-card.disabled {filter: brightness(0.7); transform: scale(0.95) translateY(20px); overflow: hidden;}
+.ticket-modal-card::-webkit-scrollbar {display: none;}
+.ticket-modal-card-inner {background-color: #f7f7f8; padding: 20px 24px 30px; cursor: pointer; border-radius: 3px; position: relative; min-height: 643px;}
+.ticket-modal-card-indicator {display: flex; flex-direction: row; align-items: center; color: #e2e2e2; position: absolute; height: 22px; top: 8px; left: 8px;}/* <svg viewBox="0 0 512 512" width="22" aria-hidden="true" focusable="false" fill="currentColor" class="valign-down"><path fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg> */
+.ticket-modal-card-indicator.checkin {color: #4cd964;}
+.ticket-modal-card-indicator.checkin::after {content: '체크인 완료'; margin-left: 5px;}
+.ticket-modal-card-qr-wrapper {width: calc(70% - 20px); margin: 15px auto 8px; text-align: center; display: flex; justify-content: center;}
+.ticket-modal-card-qr-placeholder {padding: 40px 20px; text-align: center; font-size: 29px; font-weight: bold; opacity: 0.175;}
+.ticket-modal-card-event-name {font-size: 22px; line-height: 1.2; font-weight: bold; letter-spacing: -0.6px; text-align: center; white-space: normal; word-break: keep-all;}
+.ticket-modal-card-ticket-name {font-size: 18px; letter-spacing: -0.9px; text-align: center; margin-bottom: 20px; white-space: normal; word-break: keep-all;}
+.ticket-modal-card-row {display: flex;}
+.ticket-modal-card-row > *:first-child {flex-shrink: 0; width: 40%;}
+.ticket-modal-card-row > *:nth-child(2) {flex-shrink: 0; width: 60%;}
+.ticket-modal-card-label {font-size: 13px; font-weight: lighter; letter-spacing: -0.4px; margin-bottom: 2px;}
+.ticket-modal-card-content {font-size: 14px; font-weight: bold; letter-spacing: -0.1px; margin-bottom: 10px; white-space: normal; word-break: keep-all;}
+.ticket-modal-card-content.date {font-size: 12px; white-space: pre-wrap;}
+.ticket-modal-card-content.attend {color: #00365f;}
+.ticket-modal-card-content.attend:hover {color: orangered;}
+.ticket-modal-card-hr {box-sizing: content-box; height: 0px; overflow: visible; border-top: 2px dashed #c8c8c8;}
+.ticket-modal-card-refund-button {margin-top: auto; margin-left: auto; text-align: right;}
+.ticket-modal-card-refund-button-text {font-size: 12px; color: #a4a4a4;}
+.ticket-modal-card-refund-button-text:hover {color: orangered;}
+
+.ticket-modal-mobile-view {position: fixed; bottom: 0; left: 0; right: 0; height: 42px; background: #202020; color: #fff; display: flex; -webkit-box-pack: center; justify-content: center; -webkit-box-align: center; align-items: center;}
+.ticket-modal-mobile-counter {font-size: 16px;}
+.ticket-modal-mobile-close {position: absolute; top: 0; bottom: 0; margin: auto; right: 10px; width: 100px; height: 22px; cursor: pointer; text-align: right;}
+.ticket-modal-desktop-view {display: none;}
+.ticket-modal-desktop-counter {position: fixed; top: 20px; left: 30px; font-size: 18px; color: #fff; margin: 0;}
+.ticket-modal-desktop-close {position: fixed; top: 20px; right: 20px; width: 20px; height: 20px; cursor: pointer; color: #fff;}
+
+.refund-desc {font-size: 18px; margin-top: 20px;}
+.refund-sub-desc {font-size: 13px; margin-top: 6px;}
+.refund-ticket-container {margin-top: 30px;}
+.refund-ticket-item {display: flex; flex-wrap: wrap; border-top: 2px dashed #c8c8c8; padding: 26px 12px; cursor: default; flex-direction: column; color: #000;}
+.refund-ticket-item:last-child {border-bottom: 2px dashed #c8c8c8;}
+.refund-ticket-item-price {font-size: 20px;}
+.refund-ticket-item-name {font-size: 18px; margin-top: 18px;}
+.refund-ticket-item-desc {font-size: 14px; margin: 20px 0px;}
+.refund-ticket-item-icon-text {display: inline-block; margin-left: 10px; font-size: 14px;}
+.refund-button-wrapper {margin-top: 20px; text-align: right;}
+
+/***/
+.event-card-inner {height: 160px;}
+
+@media screen and (min-width: 64em){
+    .mypage-header {font-size: 30px; letter-spacing: -0.5px; margin-bottom: 20px;}
+
+    .mypage-host-list-container {padding: 0;}
+
+    .mypage-profile-header {margin-bottom: 44px; font-size: 25px;}
+
+    .mypage-event-spread-wrapper {border: 1px solid #e2e2e2; flex-wrap: nowrap;}
+    .mypage-event-spread-image {height: 260px; width: 462px;}
+    .mypage-event-spread-title {font-size: 30px; letter-spacing: -0.5px;}
+    .mypage-event-spread-venue {margin-top: 1.5px; font-size: 18px;}
+    .mypage-event-spread-metainfo-box {display: flex;}
+    .mypage-event-spread-metainfo-box > div:not(:first-child) {margin-top: 0; margin-left: 140px;}
+    .mypage-event-spread-shortcuts {display: none;}
+
+    .mypage-ticket-list-container {max-width: 1060px;}
+    .mypage-ticket-list-desc {font-size: 18px;}
+    .mypage-ticket-list-inner {display: flex; flex-wrap: nowrap;}
+    .mypage-ticket-item {width: 206px; min-height: 233px; border-radius: 6px; padding: 14px 19px 13px; display: inline-block; margin-right: 14px; box-shadow: none;}
+    .mypage-ticket-item-name {font-size: 20px;}
+    .mypage-ticket-item-price {font-size: 18px; margin-bottom: 19px;}
+    .mypage-ticket-item-desc {margin-bottom: 20px;}
+
+    .ticket-modal-slider {padding: 0 calc((100% - 332px) / 2);}
+    .ticket-modal-card {padding: 50px 16px; width: 362px;}
+    .ticket-modal-card-content.date {font-size: 14px;}
+
+    .ticket-modal-mobile-view {display: none;}
+    .ticket-modal-desktop-view {display: block;}
+}

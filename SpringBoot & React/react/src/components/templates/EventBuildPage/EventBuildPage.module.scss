@@ -1,0 +1,21 @@
+@import "/src/common/styles/index";
+
+.container {
+	margin: auto;
+	padding: 18px 24px 100px;
+
+	@include desktop {
+		padding-top: 50px;
+		padding-bottom: 200px;
+		max-width: $maxWidth;
+	}
+}
+
+.body {
+	max-width: 1015px;
+	margin: 30px auto auto;
+
+	@include desktop {
+		margin-top: 42px;
+	}
+}

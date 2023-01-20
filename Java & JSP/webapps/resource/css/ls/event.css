@@ -1,0 +1,505 @@
+.event-container {
+	margin: auto;
+	padding: 0 24px;
+}
+.info-box {
+	display: flex;
+	margin-top: 56px;
+}
+
+.image-wrapper {
+	width: 675px;
+	margin-right: 29px;
+}
+.main-image {
+	width: 100%;
+	padding-top: 56.25%;
+}
+
+.manager-tab-container {
+	margin-bottom: 18px;
+}
+.manager-tab-notice {
+	padding: 5px 10px;
+	background-color: #f8f8fa;
+	font-size: 13px;
+	font-weight: bold;
+}
+.manager-tab-button-row {
+	display: flex;
+	margin-top: 20px;
+
+	-webkit-box-pack: justify;
+	justify-content: space-around/*space-between*/;
+}
+.manager-tab-button-row > * {/* delete */
+	width: 30%;
+}
+/*
+.manager-tab-button {
+	width: 100%;
+	letter-spacing: -.2px;
+	border: 1px solid #e8e8e8;
+	border-radius: 2px;
+	outline: none;
+	background-color: #f8f8fa;
+	user-select: none;
+	font-size: 13px;
+	line-height: 1.15;
+	pointer-events: unset;
+}
+.manager-tab-button:hover {
+	border: 1px solid #a9d5de;
+}
+.manager-tab-button:active {
+	background-color: lightgrey;
+	box-shadow: none;
+}*/
+.manager-tab-button {
+	font-size: 13px;
+	line-height: 1.15;
+	height: auto;
+	padding: 3px 0;
+}
+
+.primary-wrapper {
+	padding-top: 24px;
+	padding-left: 4px;
+	background: #ffffff;
+}
+.primary-title {
+	margin: 0;
+	letter-spacing: -1px;
+	font-size: 25px;
+	line-height: 1.28;
+}
+.primary-venue {
+	margin-top: 5px;
+	margin-bottom: 38px;
+	color: #a4a4a4;
+	font-size: 15px;
+}
+.primary-hr {
+	margin-top: 5px;
+	border-top: 1px solid #dedede;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	border-image: initial;
+}
+
+.date-wrapper {
+	margin-top: 24px;
+}
+
+.organizer-wrapper {
+	margin-top: 14px;
+	margin-bottom: 24px;
+}
+
+.host-box {
+	display: flex;
+	width: fit-content;
+	margin-top: 7px;
+	padding: 6px 9px;
+	border-radius: 6px;
+	transition: background-color .1s ease 0s;
+
+	align-items: center;
+	-webkit-box-align: center;
+}
+.host-box:hover {
+	background-color: rgba(224, 224, 228, .5);
+	box-shadow: #e0e0e4 0 0 1px 0, #e0e0e4 0 0 1px 0;
+}
+.host-box:hover path {
+	color: orangered;
+}
+.host-text {
+	margin-top: 0;
+	margin-left: 11px;
+	font-size: 15px;
+	font-weight: 300;
+}
+.host-image {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+
+	flex-shrink: 0;
+}
+
+.main-price {
+	margin-bottom: 1px;
+	padding-right: 12px;
+	text-align: right;
+	color: #777777;
+}
+
+.info-bar {
+	display: flex;
+	height: 70px;
+	border-top: 1px solid #bdbdbd;
+	border-bottom: 1px solid #bdbdbd;
+	background: white;
+
+	align-items: center;
+	-webkit-box-align: center;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+}
+.info-bar--fixed {
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	border: none;
+	background: #ffffff;
+	box-shadow: rgba(128, 128, 128, .2) 0 1px 5px 0;
+	color: #4a4a4a;
+}
+.info-bar-wrapper {
+	display: flex;
+	width: 100%;
+	max-width: 1016px;
+	height: 100%;
+	margin: 0 auto;
+
+	align-items: center;
+	-webkit-box-align: center;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+}
+.info-bar-inner {
+	display: flex;
+	flex: 1 1 auto;
+	box-sizing: border-box;
+	margin-right: 23px;
+
+	align-items: center;
+	-webkit-box-align: center;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+}
+.info-bar-title {
+	display: none;
+	margin-bottom: 3px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.info-bar-default-height {
+	display: none;
+	height: 70px;
+}
+
+.buy-button {
+	display: inline-block;
+	position: relative;
+	width: 310px;
+	margin-left: 23px;
+	padding: 16px 20px;
+	text-align: center;
+	letter-spacing: -.1px;
+	border: transparent;
+	border-radius: 3px;
+	background-color: #ff2d54;
+	user-select: none;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 1.15;
+	transition: background-color .1s ease 0s, color .1s ease 0s, border-color .1s ease 0s;
+
+	-webkit-user-drag: none;
+}
+.buy-button:hover {
+	background-color: #ff4769;
+}
+
+.personnel {
+	margin-top: 17.5px;
+	text-align: right;
+}
+.personnel>span {
+	margin-left: 5px;
+	font-size: 12px;
+}
+
+.ticket-box {
+	width: 310px;
+	margin-left: auto;
+	margin-bottom: 50px;
+
+	flex-shrink: 0;
+}
+.ticket-label {
+	margin-bottom: 16px;
+	font-size: 15px;
+}
+.ticket-wrapper {
+	display: flex;
+	flex-direction: column;
+	padding: 26px 12px;
+	border-top: 2px dashed #c8c8c8;
+	border-bottom: 2px dashed #c8c8c8;
+	cursor: default;
+	color: #000000;
+	transition: background-color .25s ease 0s;
+
+	-webkit-box-flex: 1;
+	flex-grow: 1;
+	flex-wrap: wrap;
+}
+.ticket-wrapper.expired {
+	opacity: .4;
+}
+.ticket-price {
+	margin-right: 5px;
+	font-size: 20px;
+}
+.ticket-name {
+	margin-top: 18px;
+	font-size: 18px;
+}
+.ticket-desc {
+	margin: 20px 0;
+	font-size: 14px;
+}
+.ticket-text {
+	margin-left: 10px;
+	font-size: 14px;
+}
+.ticket-icon {
+	transform: rotate(135deg);
+}
+
+.contact-wrapper {
+	margin-top: 24px;
+	margin-bottom: 97px;
+}
+.contact-label {
+	display: flex;
+	height: 27px;
+	font-size: 18px;
+
+	align-items: center;
+	-webkit-box-align: center;
+}
+.contact-inner {
+	margin-top: 15px;
+	padding: 9px 14px 13px;
+	background-color: #f7f7f8;
+}
+.contact-inner div {
+	display: flex;
+	font-size: 12px;
+}
+.contact-inner div:not(:last-child) {
+	margin-bottom: 8px;
+}
+.contact-text {
+	max-width: 230px;
+	margin-left: 11px;
+	line-height: 18px;
+}
+
+.content-box {
+	margin-top: 30px;
+
+	flex-shrink: 0;
+}
+.content-box img {
+	width: calc(100% + 48px);
+	margin: 20px 0 0 -24px;
+}
+.content-box p {
+	margin-right: 24px;
+	margin-left: 24px;
+	font-size: 14px;
+	line-height: 1.8;
+}
+
+.location-container {
+	margin: 73px auto 43px;
+	padding: 0 24px;
+}
+.location-container a,
+.content-box a {
+	color: revert;
+}
+.map-container {
+	height: 280px;
+}
+.location-label {
+	margin-top: 14px;
+	font-size: 15px;
+}
+.location-name {
+	margin-top: 15px;
+	font-size: 18px;
+}
+.location-desc {
+	margin-top: 18px;
+	margin-left: 2px;
+	font-size: 13px;
+	font-weight: 300;
+}
+
+
+.desktop-info-container {
+	display: flex;
+	margin-top: 46px;
+}
+
+.mobile-info-bar {
+	position: fixed;
+	bottom: 0;
+	box-sizing: border-box;
+	width: 100%;
+	height: 57px;
+	padding: 7px 25px;
+	background: white;
+	box-shadow: rgba(200, 200, 200, .3) 0 -2px 4px 0;
+}
+.mobile-buy-button {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 40px;
+	margin: 0 auto;
+	padding: 12px 20px;
+	text-align: center;
+	letter-spacing: -.1px;
+	border: transparent;
+	border-radius: 3px;
+	outline: none;
+	background-color: #ff2d54;
+	user-select: none;
+	color: #ffffff;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 1.15;
+	transition: background-color .1s ease 0s, color .1s ease 0s;
+
+	-webkit-user-drag: none;
+}
+.mobile-buy-button:hover {
+	background-color: #ff4769;
+}
+
+.bottom-padding {
+	height: 57px;
+}
+
+.footer-container {
+	display: none;
+}
+
+.expired-button {
+	border: none;
+	outline: none;
+	background-color: #e3e3e3;
+	box-shadow: none;
+	cursor: default;
+	pointer-events: none;
+
+	-webkit-user-drag: none;
+}
+
+@media screen and (min-width:64em) {
+	.event-container,
+	.location-container {
+		max-width: 1060px;
+	}
+
+	.manager-tab-container {
+		max-width: 300px;
+		margin-bottom: 15px;
+	}
+	.manager-tab-button-row {
+		margin-top: 10px;
+	}
+
+	.primary-wrapper {
+		width: 308px;
+		min-height: 405px;
+		padding-top: 14px;
+		border-top: 4px solid #4a4a4a;
+
+		flex-shrink: 0;
+	}
+	.primary-title {
+		margin-top: 40.5px;
+		font-size: 30px;
+		line-height: 1.36;
+	}
+	.primary-venue {
+		margin-top: 11.5px;
+		font-size: 18px;
+	}
+
+	.host-image {
+		width: 38px;
+		height: 38px;
+	}
+
+	.content-box {
+		width: 660px;
+		margin-top: 0;
+	}
+	.content-box img {
+		width: 100%;
+		margin: 20px 0 0;
+	}
+	.content-box p {
+		margin-right: 0;
+		margin-left: 0;
+		font-size: 15px;
+	}
+
+	.ticket-label {
+		margin-top: 0;
+		margin-bottom: 23.5px;
+		font-size: 18px;
+	}
+	.ticket-list {
+		width: 310px;
+	}
+
+	.contact-wrapper {
+		width: 310px;
+		margin-right: 10px;
+		margin-bottom: 0;
+	}
+
+	.location-container {
+		padding: 0 0 129px;
+	}
+	.map-container {
+		height: 400px;
+	}
+	.location-label {
+		margin-top: 23px;
+	}
+	.location-name {
+		margin-top: 13px;
+		font-size: 20px;
+	}
+	.location-desc {
+		font-size: 14px;
+	}
+
+	.personnel {
+		margin-top: 0;
+	}
+	.personnel>span {
+		margin-left: 7px;
+		font-size: 15px;
+	}
+
+	.footer-container {
+		display: block;
+	}
+}

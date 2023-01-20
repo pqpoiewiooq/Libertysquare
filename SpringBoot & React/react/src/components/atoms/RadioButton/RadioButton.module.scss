@@ -1,0 +1,17 @@
+.wrapper {
+	display: block;
+}
+.wrapper:not(:first-child) {
+	margin-top: 10px;
+}
+
+.radio {
+	width: 20px;
+	height: 20px;
+	vertical-align: bottom;
+}
+
+.label {
+	margin-left: 10px;
+	user-select: none;
+}

@@ -1,0 +1,124 @@
+@import '/src/common/styles/index';
+
+$colorHeader: adjust-color($textColorPrimary, 58, 58, 58);
+
+#gnb {
+	display: flex;
+	width: 100%;
+	height: 60px;
+	padding: 0 24px;
+	color: $textColorPrimary;
+
+	align-items: center;
+	-webkit-box-align: center;
+}
+.left {
+	display: flex;
+	flex: 1 1 0;
+
+	align-items: center;
+}
+.logo {
+	display: inline-block;
+	width: 83px;
+	height: 30px;
+	padding-top: 2px;
+	line-height: normal;
+}
+.right {
+	display: flex;
+	flex: 1 1 0;
+
+	-webkit-box-pack: end;
+	justify-content: flex-end;
+}
+.link {
+	display: none;
+	height: 32px;
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 32px;
+	transition: color .3s ease 0s;
+}
+.link:hover {
+	color: adjust-color($textColorPrimary, 51, 51, 51);
+}
+.btn {
+	display: none;
+	height: 32px;
+	margin-left: 30px;
+	padding: 5px 12px;
+	border: 1px solid $colorHeader;
+	border-radius: 3px;
+	color: $colorHeader;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: inherit;
+	transition: color .3s ease 0s, background-color .3s ease 0s;
+}
+.btn:hover {
+	background-color: $colorHeader;
+	color: $colorBackground;
+}
+.icon {
+	cursor: pointer;
+}
+
+#dropdown {
+	position: absolute;
+	z-index: 999;
+	top: 60px;
+	visibility: hidden;
+	width: 100%;
+	padding: 0 24px;
+	border-top: 1px solid $colorSecondary;
+	background: $colorBackground;
+	box-shadow: rgba(164, 164, 164, .8) 0 2px 4px 0;
+	user-select: none;
+}
+#dropdown * {
+	display: block;
+	margin: 25px 0;
+	font-size: 17px;
+	font-weight: bold;
+}
+.hr {
+	border-top: 1px solid $colorSecondary;
+}
+@keyframes fadeInY {
+	0% {
+		visibility: hidden;
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	100% {
+		visibility: visible;
+		opacity: 1;
+		transform: none;
+	}
+}
+.fadeIn {
+	animation: fadeInY .2s ease forwards;
+}
+.fadeOut {
+	animation: fadeInY .2s ease forwards reverse;
+}
+
+@include desktop {
+	.wrapper {
+		border-bottom: 1px solid adjust-color($colorHeader, 96, 96, 96);
+	}
+	#gnb {
+		max-width: $maxWidth;
+		height: 68px;
+		margin: auto;
+	}
+	.link,
+	.btn {
+		display: inline-block;
+	}
+	.icon {
+		display: none;
+	}/*valign-down*/
+}

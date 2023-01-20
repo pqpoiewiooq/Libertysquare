@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+html,
+body {
+	height: 100%;
+}
+svg {
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	padding: 75px 24px 0;
+	background-color: #f8f8fa;
+	-webkit-box-flex: 1;
+	-webkit-box-pack: start;
+	flex-grow: 1;
+	justify-content: center;/*flex-start;*/
+}
+body.sign {
+	justify-content: center;
+}
+
+.input-field:read-only {
+	background-color: #e8e8e8;
+	user-select: none;
+}
+
+header {
+	margin-bottom: 75px;
+	text-align: center;
+}
+.logo {
+	display: inline-block;
+	width: 120px;
+	height: 78.6px;
+	background: url(/img/ls/logo_big.png) center center / 100% no-repeat;
+}
+.header-text {
+	letter-spacing: -.5px;
+	font-size: 30px;
+	margin-bottom: 0;
+}
+
+.form-container {
+	width: 100%;
+	max-width: 310px;
+	margin: 0 auto;
+}
+
+.social-box {
+	margin: 0 auto 24px;
+	padding-top: 24px;
+}
+.social-title {
+	margin-bottom: 7px;
+	text-align: left;
+	font-size: 13px;
+	font-weight: bold;
+}
+.social-button {
+	position: relative;
+	width: 100%;
+	height: 44px;
+	margin: 0 auto 11px;
+	padding: 0 0 0 57px;
+	text-align: left;
+	letter-spacing: -.1px;
+	border: 1px solid #c8c8c8;
+	border-radius: 3px;
+	font-weight: bold;
+	transition: box-shadow .15s linear 0s;
+}
+.button-kakao {
+	background-color: #ffeb00;
+	color: #3c1e1e;
+}
+.button-kakao:hover {
+	background-color: #f1d900;
+}
+.button-facebook {
+	background-color: #3b5998;
+	color: #ffffff;
+}
+.button-facebook:hover {
+	background-color: #4264aa;
+}
+.button-google {
+	background-color: #ffffff;
+	color: #383838;
+}
+.button-google:hover {
+	background-color: #f0f0f0;
+}
+.social-logo {
+	display: flex;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 42px;
+	border-right: 1px solid #c8c8c8;
+	align-items: center;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+}
+
+.center-text {
+	margin-bottom: 33px;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.sign-label {
+	margin-bottom: 6px;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+@media screen and (min-width:64em) {
+	body {
+		margin-top: auto;
+		-webkit-box-pack: center;
+	}
+	body.sign {
+		justify-content: center;
+	}
+}

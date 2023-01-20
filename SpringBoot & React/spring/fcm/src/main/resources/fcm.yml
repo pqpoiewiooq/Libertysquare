@@ -1,0 +1,4 @@
+spring:
+  firebase:
+    fcm:      authorization: key=AAAA_require_key=_prefix_set_your_firebase_key
+      charset: UTF-8

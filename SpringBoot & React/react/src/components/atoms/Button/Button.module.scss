@@ -1,0 +1,91 @@
+@import '/src/common/styles/index.scss';
+
+$_disabled: adjust-color($colorSecondary, -20, -20, -20);
+
+.__prototype__ {
+	position: relative;
+	text-align: center;
+	letter-spacing: -.1px;
+	border: transparent;
+	border-radius: 3px;
+	background-color: $buttonColor;
+	color: $colorBackground;
+	font-size: $textSize - 1px;
+	font-weight: 700;
+	transition: background-color .1s ease 0s,color .1s ease 0s,border-color .1s ease 0s;
+
+	&:hover, &:focus {
+		background-color: adjust-color($buttonColorFocus, 25, 13, 0);
+	}
+	&:active {
+		background-color: adjust-color($buttonColorActive, -54, -39, -20);
+	}
+
+	&.secondary {
+		background-color: $colorError;
+		&:hover, &:focus {
+			background-color: $colorErrorFocus;
+		}
+		&:active {
+			background-color: $colorErrorActive;
+		}
+	}
+}
+
+.normal {
+	@extend .__prototype__;
+
+	width: 100%;
+	height: auto;
+	padding: 16px 20px;
+
+	@include desktop {
+		width: auto;
+	}
+}
+
+.form {
+	@extend .__prototype__;
+
+	width: 100%;
+	height: $inputHeight;
+	padding: 0 20px;
+
+	&:not(:last-of-type), &:first-of-type {
+		margin: 20px 0 11px;
+	}
+}
+
+.checkplus {
+	@extend .__prototype__;
+	
+	width: 100%;
+	height: auto;
+	margin-bottom: 60px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+.confirm {
+	@extend .__prototype__;
+
+	width: 100%;
+	height: auto;
+	padding: 16px 20px;
+	
+	@include desktop {
+		width: auto;
+	}
+}
+
+.container {
+	margin-top: 54px;
+
+	&.right {
+		text-align: right;
+	}
+
+	@include desktop {
+		margin-top: 24px;
+	}
+}

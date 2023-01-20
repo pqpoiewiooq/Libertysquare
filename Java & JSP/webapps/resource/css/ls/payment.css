@@ -1,0 +1,60 @@
+.payment-container {display: flex; flex-wrap: wrap; height: 100%; margin: auto; padding: 0px 24px 50px;}
+
+.payment-step-wrapper {width: 100%; display: flex; flex-wrap: wrap; order: 2;}
+.payment-step-box.accent .payment-step-text{color: inherit;}
+.payment-step-text {font-size: 13px; font-weight: bold; color: #c8c8c8;}
+.payment-step-divider {font-size: 15px; color: #b0b0b0; margin: 0 18px;}
+.payment-step-divider::before {content: ">";}
+
+.payment-ticket-container {width: 100%; order: 3;}
+.payment-ticket-header {margin: 40px 0 0; letter-spacing: -1px; display: none; font-size: 32px;}
+.payment-ticket-item {width: 100%; display: flex; flex-wrap: nowrap; border-radius: 3px; background-color: #ebebee; padding: 12px 19px; cursor: pointer; transition: background-color 0.25s ease 0s; margin-top: 10px;}
+.payment-ticket-item.expired {opacity: 0.4; pointer-events: none;}
+.payment-ticket-item.option {display:none; background-color: #fef4df; margin-top: 5px; padding: 10px 20px; cursor: default; flex-wrap: nowrap; -webkit-box-align: center; align-items: center; -webkit-box-pack: justify; justify-content: space-between; font-weight: bold;}
+.payment-ticket-item.selected {background-color: #fef4df;}
+.payment-ticket-item.selected + .payment-ticket-item.option {display: flex;}
+.payment-ticket-item.selected + .payment-ticket-item.option + .payment-ticket-item.option {display: flex;}
+.payment-ticket-item-inner {display: flex; -webkit-box-flex: 1; flex-grow: 1; flex-direction: column; margin-right: 20px;}
+.payment-ticket-item-name {font-size: 18px; font-weight: bold; width: 100%; margin: 0; max-width: 320px;}
+.payment-ticket-item-price {font-size: 15px; margin-bottom: 5px;}
+.payment-ticket-item-desc {font-size: 13px; letter-spacing: -0.1px; font-weight: 300; margin: 0 0 5px; text-overflow: ellipsis; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+.payment-ticket-item-date {display: inline-block; margin-left: 10px; font-size: 13px;}
+.payment-ticket-item-chkbox {width: 25px; height: 25px; display: flex; align-self: center; cursor: pointer;}
+
+.payment-ticket-option-text {font-size: 12px;}
+
+.counter-container {display: flex; width: 140px;}
+.counter-button {width: 34px; height: 43px; border: 1px solid #7a7a7a; background-color: #7a7a7a; color: #fff; transition: background-color 0.15s ease 0s;}
+.counter-button.left {border-radius: 2px 0 0 2px;}
+.counter-button.right {border-radius: 0 2px 2px 0;}
+.counter-button:disabled {border: 1px solid #d8d8d8; background-color: #d8d8d8; color: #f5f5f5;}
+.counter-input {width: 100%; height: 43px; line-height: 35px; border-radius: 0; border-top: 1px solid #c8c8c8; border-bottom: 1px solid #c8c8c8; border-image: initial; border-left: none; border-right: none; text-align: center;}
+
+.payment-event-container {width: 100%; order: 1;}
+.payment-event-img {width: 100%; margin-bottom: 0.67em;}
+.payment-event-title {font-size: 25px;}
+.payment-event-inner {display: none;}
+.payment-event-info-wrapper {display: flex; margin-top: 0.67em;}
+.payment-event-map-wrapper {height: 200px; margin: 25px 0;}
+.payment-event-info-box {-webkit-box-flex: 1; flex-grow: 1;}
+
+.footer-container {display: block;}
+
+@media screen and (min-width:64em){
+    .payment-container {max-width: 1060px;}
+
+    .payment-step-wrapper {margin-top: 30px; margin-bottom: 10px; order: 1;}
+
+    .payment-ticket-container {width: 50%; padding-right: 80px; order: 2;}
+    .payment-ticket-header {display: block; font-size: 36px; letter-spacing: -0.payment-5px;}
+    .payment-ticket-item-name {font-size: 20px; letter-spacing: -0.3px; margin: 0 0 1px;}
+    .payment-ticket-item-desc {font-size: 14px; letter-spacing: -0.2px; color: #000;}
+
+    .payment-ticket-option-label {font-size: 17px;}
+    .counter-container {width: 164px;}
+
+    .payment-event-container {width: 50%; padding-left: 80px; order: 3;}
+    .payment-event-inner {display: block;}
+
+    .confirm-btn {width: 195px;}
+}

@@ -1,0 +1,10 @@
+.wrapper {
+	display: inline-block;
+	margin-bottom: 18px;
+	cursor: pointer;
+	user-select: none;
+}
+.wrapper>span {
+	display: inline-block;
+	position: relative;
+}

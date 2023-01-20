@@ -1,0 +1,34 @@
+@import "./function";
+@import "./keyframes";
+@import "./mixin";
+@import "./size";
+
+$colorPrimary: #00365f;
+$colorSecondary: #c8c8c8;
+$colorTertiary: #00a4e3;
+
+$colorBackground: #fff;
+$colorOnBackground: #000;
+$colorBackgroundSecondary: adjust-color($colorSecondary, 47, 47, 48);
+
+
+$textColorPrimary: #4a4a4a;
+$textColorSecondary: $colorSecondary;
+$textColorTertiary: adjust($textColorPrimary, 45);//777
+$textColorAccent: #000;
+
+$colorError: #ff2d54;
+$colorErrorFocus: adjust-color($colorError, 0, 26, 21);
+$colorErrorActive: adjust-color($colorError, -31, -46, -42);
+$colorConfirm: #2c662d;
+$colorConfirmSecondary: #a3c293;
+
+$buttonColor: adjust-color($colorTertiary, 60, -11, 25);
+$buttonColorFocus: adjust-color($buttonColor, 25, 13, 0);
+$buttonColorActive: adjust-color($buttonColor, -54, -39, -20);
+
+$colorHover: orangered;
+
+@mixin fadeIn {
+	animation: fadeIn .2s linear;
+}

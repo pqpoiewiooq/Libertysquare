@@ -1,0 +1,62 @@
+.gnb-event-title {font-size: 22px; font-weight: bold; line-height: 1.15; letter-spacing: -0.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 505px;}
+.cross-mark {margin: 0 8px; font-size: 20px; line-height: 1.2; flex-shrink: 0;}
+.publish-state {font-size: 20px; font-weight: bold; line-height: 1.15; letter-spacing: -0.5px; color: #2db62e; flex-shrink: 0;}
+.manage-gnb-link-container {display: flex; margin: 0 -12px 0 auto; height: 36px;}
+.manage-gnb-link {display: inline-block; width: 85px; height: 40px; padding-top: 10px; font-size: 14px; font-weight: bold; text-align: center; transition: background-color 0.2s ease 0s;}
+.manage-gnb-link[active] {border-bottom: 3px solid #4a4a4a;}
+.manage-gnb-link:hover {background-color: #eee;}
+
+.manage-fomatter {height: 100%; padding: 70px 24px; margin: auto; max-width: 1060px;}
+
+.attendee-tool-box {width: 100%; border-radius: 3px; border: 1px solid #d8d8d8; padding: 0 32px; min-height: 30px;}
+.attendee-tool-box.ticket {padding: 10px 20px; margin-bottom: 24px;}
+.attendee-tool-box strong {color: #2db62e;}
+
+.attendee-counter {margin: 40px 0 20px 0; font-size: 24px; font-weight: bold; text-align: right;}
+.attendee-search-input {height: 56px; font-size: 18px;}
+.attendee-menu-row {display: flex; -webkit-box-pack: justify; justify-content: space-between; margin: 24px 0 40px;}
+.attendee-help-link {color: #4897d8; font-size: 14px;}
+.attendee-button-container {margin-left: auto;}
+.attendee-button-container > * + * {margin-left: 12px;}
+.attendee-button {width: auto; background-color: #8b8b8b; color: #fff; border: transparent; padding: 12px 20px; border-radius: 3px; letter-spacing: -0.1px; font-weight: bold; font-size: 15px; text-align: center; position: relative; transition: background-color 0.1s ease 0s, color 0.1s ease 0s, border-color 0.1s ease 0s; height: 40px; line-height: 1.15; -webkit-user-drag: none; display: inline-block;}
+.attendee-button:active {background-color: #656565;}
+.attendee-button:hover, .attendee-button:focus {background-color: #989898;}
+
+.attendee-panel-container {display: flex; -webkit-box-pack: center; justify-content: center; height: 40px; margin: 20px 0 10px;}
+.border-bottom {border-bottom: 1px solid #e8e8e8;}
+.attendee-panel {display: inline-block; height: 100%; width: 150px; font-size: 20px; font-weight: bold; letter-spacing: -1px; transition: opacity 0.1s ease 0s; cursor: pointer; text-align: center; opacity: 0.5;}
+.attendee-panel.active, .attendee-panel:hover {opacity: 1;}
+
+.attendee-user-info-row {height: 57px; display: flex; -webkit-box-align: center; align-items: center;}
+.attendee-user-info-row > * + * {margin-right: 40px;}
+.attendee-user-info-icon {border-radius: 50%; width: 35px; height: 35px; pointer-events: none; color: #fff; font-size: 14px; margin-right: 18px; word-break: keep-all; overflow-wrap: normal; overflow: hidden; border: 1px solid #98a0a8; background-image: linear-gradient(to top, #009efd, #2af598); display: flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: center; justify-content: center;}
+.attendee-table-row {display: flex; -webkit-box-align: center; align-items: center; margin-bottom: 10px;}
+.attendee-table-label {font-size: 12px; color: #9b9b9b; width: 130px;}
+.attendee-table-text {font-size: 15px; width: 130px;}
+.attendee-table-right {margin-left: auto; text-align: right;}
+
+.attendee-switch {position: relative; display: inline-block; text-align: left; user-select: none;}
+.attendee-switch-bg {height: 40px; width: 70px; position: relative; background: #3c99fc; border-radius: 20px; cursor: pointer; transition: background 0.25s ease 0s;}
+.attendee-switch-check {height: 40px; width: 37px; position: relative; pointer-events: none; transition: opacity 0.25s ease 0s; opacity: 0;}
+.attendee-switch-cross {height: 40px; width: 37px; position: absolute; pointer-events: none; transition: opacity 0.25s ease 0s; top: 0; right: 0;}
+.attendee-switch-handle {height: 28px; width: 28px; background: #0ff; cursor: pointer; display: inline-block; border-radius: 50%; position: absolute; transform: translateX(6px); top: 6px; outline: none; border: none; transition: background-color 0.25s ease 0s, transform 0.25s ease 0s, box-shadow 0.15s ease 0s;}
+.attendee-switch.on .attendee-switch-bg {background-color: #0ff;}
+.attendee-switch.on .attendee-switch-check {opacity: 1;}
+.attendee-switch.on .attendee-switch-cross {opacity: 0;}
+.attendee-switch.on .attendee-switch-handle {background: #3c99fc; transform: translateX(36px);}
+
+.attendee-payment-row {text-align: right; font-size: 13px; font-weight: 400; padding-top: 15px; border-top: 1px solid #eaeaea;}
+.attendee-purchased-price {font-family: sans-serif;}
+.attendee-refund-button {margin-left: 18px; color: #c8c8c8; cursor: pointer; user-select: none;}
+
+.attendee-check-container {min-height: 500px; position: relative;}
+.attendee-nothink-text {text-align: center; padding-top: 60px; opacity: 0.135; font-size: 28px; font-weight: bold;}
+
+.download-center-container {width: 100%; height: 100%; max-width: 800px;}
+.download-center-desc {font-weight: 300; word-break: keep-all; margin-bottom: 20px;}
+.download-center-text {font-size: 14px; font-weight: 300; word-break: keep-all; margin-bottom: 16px;}
+.download-center-button {width: 100%; padding: 12px 20px; border-radius: 3px; letter-spacing: -0.1px; font-weight: bold; font-size: 15px; outline: none; user-select: none; text-align: center; position: relative; transition: background-color 0.1s ease 0s, color 0.1s ease 0s, border-color 0.1s ease 0s; border: 1px solid #0c7847; color: #0c7847; background-color: #fff; height: 40px; line-height: 1;}
+
+@media screen and (min-width: 64em) {
+    .download-center-button {width: auto;}
+}

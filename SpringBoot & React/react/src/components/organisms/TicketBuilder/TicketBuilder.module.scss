@@ -1,0 +1,18 @@
+@import '/src/common/styles/index';
+
+.selectable-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+
+	@include desktop {
+		flex-wrap: nowrap;
+	}
+
+	& > * {
+		margin: 0 0 8px;
+
+		@include desktop {
+			margin: 0 15px 0 0;
+		}
+	}
+}

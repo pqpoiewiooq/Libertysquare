@@ -1,0 +1,11 @@
+@import '/src/common/styles/index.scss';
+
+.error {
+	height: 16px;
+	color: $colorError;
+	font-size: $textSize - 3px;
+
+	&.hidden {
+		display: none;
+	}
+}

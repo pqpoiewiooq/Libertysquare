@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path=""
+	docBase="${catalina.home}/LiertysquareChat"
+	sessionCookieDomain="libertysquare.co.kr"
+	sessionCookiePath="/">
+
+	<Manager className="org.redisson.tomcat.RedissonSessionManager"
+		configPath="${catalina.base}/redisson.conf"
+		readMode="REDIS"
+		updateMode="DEFAULT"
+		broadcastSessionEvents="false"
+		keyPrefix="" />
+		
+	<Valve className="tomcat.request.session.redis.SessionHandlerValve" />
+	<Manager className="tomcat.request.session.redis.SessionManager" />
+
+</Context>

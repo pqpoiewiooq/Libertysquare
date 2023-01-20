@@ -1,0 +1,146 @@
+@import "/src/common/styles/index";
+
+.box {
+	display: block;
+	width: 100%;
+	min-width: 130px;
+	margin: 0 0 25px 11px;
+
+	@include min-width(330px) {
+		width: calc(50% - 11px);
+		min-width: 150px;
+
+		&:nth-last-child(2) {
+			margin-bottom: 0;
+		}
+	}
+
+	@include min-width(510px) {
+		width: calc(((100/3)*1%) - 15.01px);/* IE에서 15px만 빼주면, 정상 작동하지 않을 경우가 있어서, 0.01을 추가로 빼줌 */
+		margin-left: 15px;
+
+		&:nth-last-child(3) {
+			margin-bottom: 0;
+		}
+	}
+
+	@include min-width(900px) {
+		width: calc(25% - 15px);
+
+		&:nth-last-child(4) {
+			margin-bottom: 0;
+		}
+	}
+
+	@include min-width(1442px) {
+		width: calc(20% - 15px);
+
+		&:nth-last-child(5) {
+			margin-bottom: 0;
+		}
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.img-wrapper {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 7px;
+	padding-top: 56.25%/*72%*/;
+	border: 1px solid adjust-color($colorSecondary, 32, 32, 32);
+	border-radius: 8px;
+	background-color: $colorBackground;
+}
+.img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 7px;
+	transition: transform .2s ease 0s;
+
+	object-fit: cover;
+}/* background:url(img/apple.png) center center / cover no-repeat; */
+.img:hover {
+	transform: scale(1.05);
+}
+/* .body {overflow: hidden; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;} */
+.extra-text {
+	margin-bottom: 1px;
+	letter-spacing: -.84px;
+	color: adjust-color($textColorPrimary, 6, 6, 6);
+	font-size: $textSize - 6px;
+	font-weight: bold;
+
+	@include min-width(700px) {
+		font-size: $textSize;
+		font-weight: 400;
+	}
+}
+.title {
+	margin-bottom: 1px;
+	letter-spacing: -.36px;
+	color: adjust-color($textColorAccent, 34, 34, 34);
+	font-size: $textSize - 4px;
+	font-weight: 600;
+
+	@include min-width(700px) {
+		margin-bottom: 4px;
+		font-size: $textSize;
+	}
+}
+.tag {
+	letter-spacing: .3px;
+	color: adjust-color($textColorPrimary, 5, 5, 5);
+	font-size: $textSize - 6px;
+	font-weight: 400;
+
+	@include min-width(700px) {
+		font-size: $textSize - 4px;
+		letter-spacing: normal;
+		color: adjust-color($textColorPrimary, -40, -40, -40);
+	}
+}
+// .subject {
+// 	margin-bottom: 1px;
+// 	letter-spacing: -.34px;
+// 	color: #333333;
+// 	font-size: 12px;
+// 	font-weight: bold;
+// }
+
+.expired .img-wrapper::before {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba($colorOnBackground, .5);
+	content: "";
+	pointer-events: none;
+
+	inset: 0;
+}
+.expired .img-wrapper::after {
+	position: absolute;
+	z-index: 2;
+	top: 4px;
+	left: 6px;
+	height: 16px;
+	padding: 2px 6px;
+	letter-spacing: normal;
+	border-radius: 4px;
+	background-color: $colorOnBackground;
+	content: "종료";
+	color: $colorBackground;
+	font-size: $textSize - 6px;
+	font-weight: bold;
+}
+.expired .body {
+	opacity: .5;
+}

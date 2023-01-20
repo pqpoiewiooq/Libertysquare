@@ -1,0 +1,46 @@
+spring:
+  env:
+    time-zone: Asia/Seoul
+    enc: UTF-8
+  firebase:
+    key: AAAAYmO548k:APA91bF0AlE6UxLt8p_ECh_hsMeBg0lPs3-6fQdalkcYTbxatsr2JXhh1hW863TPE1_t9CakqnGV0IwkW8EpWOCVy1dcrV-dUisEb3IfpKye5v1sK41Ln87u1xjYHGtRDIZpEZ-ryFei
+    enc: UTF-8
+  jwt:
+    secret: VlwEyVBsYt9V7zq57TejMnVUyzblYcfPQye08f7MGVA9XkHN
+    algorithm: hs256
+    access-token-expire: 1800000 # 30 * 60 * 1000 = 30m
+    refresh-token-expire: 604800000 # 7 * 24 * 60 * 60 * 1000 = 7d
+  jackson:
+    default-property-inclusion: non-null
+  redis:
+#    host: 192.168.1.101
+    host: 127.0.0.1
+    port: 6379
+  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://[ip]:[port...]
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: 
+    hikari:
+      poolName: Hikari
+      maximum-pool-size: 10
+      max-lifetime: 1800000
+      auto-commit: false
+      data-source-properties:
+        cachePrepStmts: true
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+        useServerPrepStmts: true
+  jpa:
+#    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    database-platform: org.hibernate.dialect.H2Dialect
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      enabled: true
+      path: /h2-console

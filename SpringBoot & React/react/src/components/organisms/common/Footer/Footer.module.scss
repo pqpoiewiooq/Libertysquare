@@ -1,0 +1,27 @@
+@import '/src/common/styles/index';
+
+.container {
+	width: 100%;
+	margin: auto;
+	padding: 0 24px;
+	background: $colorBackground;
+}
+.wrapper {
+	padding: 20px 0;
+	border-top: 1px solid adjust-color($textColorSecondary, 32, 32, 32);
+}
+.logo {
+	width: 67px;
+	height: 24px;
+	padding-top: 2px;
+}
+.fnb a {
+	margin-right: 13px;
+	color: $textColorSecondary;
+	font-size: 12px;
+	font-weight: bold;
+}
+.text {
+	color: $textColorSecondary;
+	font-size: 9px;
+}

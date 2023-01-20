@@ -1,0 +1,97 @@
+@import '/src/common/styles/index.scss';
+
+.container {
+	width: 100%;
+	min-height: 700px;
+	margin: auto auto 100px;
+	padding: 0 20px;
+
+	@include desktop {
+		max-width: $maxWidth;
+		padding: 0 24px;
+	}
+}
+
+.lnb {
+	display: none;
+	margin-bottom: 60px;
+
+	@include desktop {
+		display: flex;
+	}
+}
+
+
+// children
+.formatter {
+	position: relative;
+	font-size: .9em;
+	line-height: 2.1;
+	min-height: 500px;
+
+	@include desktop {
+		font-size: 1em;
+		min-height: 300px;
+	}
+
+
+	
+	& > h1 {
+		margin-bottom: 40px;
+		letter-spacing: -1px;
+		font-size: 1.8em;
+	
+		&:first-of-type {
+			text-align: center;
+
+			@include desktop {
+				display: none;
+			}
+		}
+
+		@include desktop {
+			letter-spacing: -.5px;
+			font-size: 2em;
+		}
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	section:not([class]) {
+		max-width: 780px;
+		margin-bottom: 100px;
+	}
+
+	hr {
+		margin-top: 24px;
+		border-top: 1px solid adjust-color($colorSecondary, 22, 22, 22);
+		border-right: none;
+		border-bottom: none;
+		border-left: none;
+		border-image: initial;
+	}
+
+	article {
+		margin-top: 40px;
+		margin-bottom: 70px;
+	
+		h3 {
+			font-size: 1.2em;
+	
+			@include desktop {
+				font-size: 1.17em;
+			}
+		}
+	
+		p {
+			padding-left: 2px;
+		}
+	
+		li {
+			float: none;
+			list-style: disc;
+		}
+	}
+}

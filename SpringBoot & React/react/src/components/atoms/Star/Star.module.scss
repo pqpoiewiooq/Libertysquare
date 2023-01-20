@@ -1,0 +1,16 @@
+.star {
+	display: inline-block;
+	overflow: hidden;
+	width: 30px;
+	height: 30px;
+	vertical-align: -.125em;
+	color: #f1c40f;
+}
+.overlap {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 0;
+}

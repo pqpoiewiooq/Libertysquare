@@ -1,0 +1,29 @@
+@import "/src/common/styles/index";
+
+.description {
+	font-size: $textSize - 5px;
+}
+.body {
+	display: flex;
+	width: 100%;
+	margin-top: 10px;
+	flex-wrap: wrap;
+
+	&.since {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-size: 16px;
+
+		align-items: center;
+		-webkit-box-align: center;
+	}
+}
+
+.datepickr {
+	width: 122px;
+}
+.since-text {
+	margin-left: 25px;
+	font-family: Lora, serif;
+	font-size: 20px;
+}

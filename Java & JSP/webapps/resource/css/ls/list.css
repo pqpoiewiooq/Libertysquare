@@ -1,0 +1,102 @@
+.content-container {display: block; position: relative; padding-top: 132px}
+.content-container li {float: none}
+.content-box {padding: 0; margin-bottom: 40px}
+.content-title {font-size: 24px; font-weight: 700; letter-spacing: -1.64px; color: #000; margin-bottom: 1px; padding: 0 17px;}
+.content-description {font-size: 15px; font-weight: 400; letter-spacing: -0.84px; color: #7d7d7d; margin-bottom: 19px; padding: 0 17px}
+.event-container {display: flex; flex-wrap: wrap; flex-direction: row; margin-left: -11px; padding: 0 15px;}
+.event-box {display: block; min-width: 130px; width: 100%; margin: 0 0 25px 11px;}
+.event-box:last-child {margin-bottom: 0;}
+.event-img-wrapper {padding-top: 56.25%/*72%*/; border-radius: 8px; background-color: #fff; margin-bottom: 7px; position: relative; overflow: hidden; border: 1px solid #e8e8e8}
+.event-img-wrapper img {position: absolute; top: 0; left: 0; height: 100%; width: 100%; object-fit: cover; transition: transform 0.2s ease 0s; margin-bottom: 7px}
+.event-img-wrapper img:hover {transform: scale(1.05)}
+/* .event-body {overflow: hidden; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;} */
+/* d-day : 10 / title : 12 / tag : 10 / subject : 12 */
+.event-d-day {font-size: 15px; font-weight: bold; letter-spacing: -0.84px; color: #505050; margin-bottom: 1px}
+.event-title {font-size: 18px; font-weight: 600; letter-spacing: -0.36px; color: #222; margin-bottom: 1px}
+.event-tag {font-size: 15px; font-weight: 400; letter-spacing: 0.3; color: #4f4f4f}
+.event-subject {font-size: 18px; font-weight: bold; letter-spacing: -0.34px; color: #333; margin-bottom: 1px;}
+
+.event-box[expired] .event-img-wrapper::before {content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; inset: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 1; pointer-events: none}
+.event-box[expired] .event-img-wrapper::after {content: "종료"; position: absolute; font-size: 10px; font-weight: bold; letter-spacing: normal; height: 16px; border-radius: 4px; padding: 2px 6px; top: 4px; left: 6px; background-color: #000; color: #fff; z-index: 2}
+.event-box[expired] .event-body {opacity: 0.5;}
+
+/* loading */
+.image-loader:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -25px;
+	height: 12px;
+	width: 12px;
+	border-radius: 12px;
+	animation: image-loader-anim 3s ease-in-out infinite;
+}
+
+.image-loader{
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	top: 46%;
+	left: 46%;
+	border-radius: 12px;
+	animation: image-loader-anim 3s ease-in-out infinite;
+	animation-delay: .6s;
+}
+
+
+.image-loader:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 25px;
+	height: 10px;
+	width: 10px;
+	border-radius: 10px;
+	animation: image-loader-anim 3s ease-in-out infinite;
+	animation-delay: 1.2s;
+}
+
+@keyframes image-loader-anim{
+	0%{background-color: rgba(0, 0, 0, .2);}
+	25%{background-color: rgba(0, 0, 0, 1);}
+	50%{background-color: rgba(0, 0, 0, .2);}
+	75%{background-color: rgba(0, 0, 0, .2);}
+	100%{background-color: rgba(0, 0, 0, .2);}
+}
+
+
+@media screen and (min-width:700px){
+	.content-container {padding: 40px 80px}
+	.content-box {margin-bottom: 80px}
+	.content-box:last-child {margin-bottom: 0;}
+	.content-title {font-size: 35px}
+	.content-description {font-size: 18px; margin-bottom: 22px}
+	.event-d-day {font-size: 16px; font-weight: 400}
+	.event-title {font-size: 16px; margin-bottom: 4px}
+	.event-tag {font-size: 12px; letter-spacing: normal; color: #222}
+	.event-subject {font-size: 14px; font-weight: 500; color: #505050; line-height: 17px; letter-spacing: -0.842144px;}
+}
+
+@media screen and (min-width:330px){
+	.event-box {min-width: 150px; width: calc(100% - 11px);}
+	/* .event-box {min-width: 150px; width: calc(50% - 11px);} */
+	/*.event-box:nth-last-child(2) {margin-bottom: 0;}*/
+}
+
+@media screen and (min-width:510px){
+	.event-container {margin-left: -15px;}
+	.event-box {width: calc(50% - 15.01px); margin-left: 15px;}
+	/* .event-box {width: calc(((100/3)*1%) - 15.01px); margin-left: 15px;}IE에서 15px만 빼주면, 정상 작동하지 않을 경우가 있어서, 0.01을 추가로 빼줌 */
+	/*.event-box:nth-last-child(3) {margin-bottom: 0;}*/
+	.event-box:nth-last-child(2) {margin-bottom: 0;}
+}
+
+@media screen and (min-width:900px){
+	.event-box {width: calc(25% - 15px);}
+	.event-box:nth-last-child(4) {margin-bottom: 0;}
+}
+
+@media screen and (min-width:1442px){
+	.event-box {width: calc(20% - 15px);}
+	.event-box:nth-last-child(5) {margin-bottom: 0;}
+}

@@ -1,0 +1,27 @@
+@import "/src/common/styles/index";
+
+$itemColor: adjust-color($colorTertiary, 0, -38, 28);
+
+.item {
+	background-color: rgba($itemColor, .08);
+	border-radius: 2px;
+	border: 1px solid rgba($itemColor, .24);
+	color: $itemColor;
+	display: inline-block;
+	font-size: .9em;
+	user-select: none;
+
+	&:not(:first-of-type) {
+		margin-left: 5px;
+	}
+}
+
+.icon {
+	border-right: 1px solid rgba($itemColor, .24);
+	padding: 1px 5px 3px;
+}
+
+.text {
+	cursor: default;
+	padding: 2px 5px;
+}

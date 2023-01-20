@@ -1,0 +1,35 @@
+@import '/src/common/styles/index';
+
+.nav {
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+	transition: background-color .2s ease 0s;
+	//color : $textColorPrimary;
+
+	&:hover {
+		background-color: adjust-color($colorSecondary, 38, 38, 38);
+	}
+}
+
+.large {
+	flex: 1 1 0;
+	height: 70px;
+	padding: 20px;
+	font-size: $textSize + 2px;
+
+	@extend .nav;
+}
+
+.small {
+	width: 85px;
+	height: 40px;
+	padding-top: 10px;
+	font-size: $textSize - 2px;
+
+	@extend .nav;
+}
+
+.active {
+	border-bottom: 3px solid $textColorPrimary;
+}

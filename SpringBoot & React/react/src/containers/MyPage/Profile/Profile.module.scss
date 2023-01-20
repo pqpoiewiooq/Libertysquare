@@ -1,0 +1,16 @@
+@import "/src/common/styles/index";
+
+.section {
+	max-width: 312px;
+	margin-bottom: 80px;
+}
+
+.header {
+	font-size: 30px;
+	letter-spacing: -0.5px;
+
+	@include desktop {
+		margin-bottom: 44px;
+		font-size: 25px;
+	}
+}
